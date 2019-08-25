@@ -1,0 +1,21 @@
+<beanio xmlns="http://www.beanio.org/2012/03"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.beanio.org/2012/03 http://www.beanio.org/2012/03/mapping.xsd">
+	<stream name="BanniereSendFile" format="fixedlength">
+		<record name="BanniereBean" class="fr.scnf.model.Banniere">
+			<field name="refEnregistrement" length="3" type="string" />
+			<field name="identifant" length="10" type="string" />
+			<field name="dateFichier" length="6" type="int" padding="0" />
+			<field name="numeroFichier" length="10" type="int" padding="0" />
+			<field name="nombreEnregistrement" length="8" type="int" />
+			<field name="numeroversion" length="3" type="string" />
+			<segment name="listReglement" collection="list" minOccurs="1"
+				maxOccurs="unbounded" class="fr.scnf.model.Reglement">
+				<field name="refEnregistrement" length="3" type="string" />
+				<field name="identifant" length="10" type="string" />
+				<field name="dateFichier" length="6" type="int" padding="0" />
+				<field name="numeroFichier" length="10" type="int" padding="0" />
+			</segment>
+		</record>
+	</stream>
+</beanio>
