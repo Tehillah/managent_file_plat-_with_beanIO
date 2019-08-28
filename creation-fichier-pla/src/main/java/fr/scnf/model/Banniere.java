@@ -2,25 +2,34 @@ package fr.scnf.model;
 
 import java.util.List;
 
-//@Record(minOccurs=0, maxOccurs=-1)
-//@Fields({
-//    @Field(at=0, name="recordType", rid=true, literal="D")
-//})
+import org.apache.commons.lang.RandomStringUtils;
+import org.apache.commons.lang.math.RandomUtils;
+
 public class Banniere {
 
-//    @Field(at=1, maxLength=20)
 	private String refEnregistrement;
-//    @Field(at=2, required=true, maxLength=30)
+
 	private String identifant;
-//    @Field(at=5, maxLength=6)
+
 	private int dateFichier;
-//    @Field(at=3, maxLength=30)
+
 	private int numeroFichier;
-//    @Field(at=5, minLength=2, maxLength=2)
+
 	private int nombreEnregistrement;
-//    @Field(at=3, maxLength=30)
+
 	private String numeroversion;
-	private List<Reglement> listReglement;
+	private List<Reglement> reglements;
+	private ArticleFin articleFin;
+
+	public Banniere(String refEnregistrement) {
+		super();
+		this.refEnregistrement = refEnregistrement;
+		this.identifant = RandomStringUtils.randomAlphanumeric(15);
+		this.dateFichier = RandomUtils.nextInt(8);
+		this.numeroFichier = RandomUtils.nextInt(6);
+		this.nombreEnregistrement = RandomUtils.nextInt(7);
+		this.numeroversion = RandomStringUtils.randomAlphanumeric(2);
+	}
 
 	public String getRefEnregistrement() {
 		return refEnregistrement;
@@ -70,12 +79,20 @@ public class Banniere {
 		this.numeroversion = numeroversion;
 	}
 
-	public List<Reglement> getListReglement() {
-		return listReglement;
+	public List<Reglement> getReglements() {
+		return reglements;
 	}
 
-	public void setListReglement(List<Reglement> listReglement) {
-		this.listReglement = listReglement;
+	public void setReglements(List<Reglement> reglements) {
+		this.reglements = reglements;
+	}
+
+	public ArticleFin getArticleFin() {
+		return articleFin;
+	}
+
+	public void setArticleFin(ArticleFin articleFin) {
+		this.articleFin = articleFin;
 	}
 
 }
