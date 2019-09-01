@@ -1,11 +1,9 @@
 package fr.scnf.lanceur;
 
 import java.io.File;
-import java.util.ArrayList;
+import java.text.SimpleDateFormat;
 import java.util.Date;
-import java.util.List;
 
-import org.apache.commons.lang.RandomStringUtils;
 import org.beanio.BeanWriter;
 import org.beanio.StreamFactory;
 
@@ -29,63 +27,63 @@ public class Lanceur {
 		// create a BeanIO StreamFactory
 		StreamFactory factory = StreamFactory.newInstance();
 		// load the mapping file from the working directory
-		factory.load("src/main/resources/banniere.xml");
+		// factory.load("src/main/resources/banniere.xml");
+		factory.load("src/main/resources/configuration.xml");
+		SimpleDateFormat formatBannier = new SimpleDateFormat("yyyyMMdd");
+		SimpleDateFormat autreFormat = new SimpleDateFormat("yyyy-MM-dd");
 		Date date = new Date();
+		String dateFichier = formatBannier.format(date);
+
+		String dateAujourdhui = autreFormat.format(date);
+
 		// create a BeanWriter to write to "output.csv"
-		BeanWriter out = factory.createWriter("BanniereSendFile", new File("src/main/resources/" + date + ".txt"));
-		for (int i = 0; i < 50; i++) {
-			String refEnregistrement = RandomStringUtils.randomAlphanumeric(3);
-			Banniere banniere = new Banniere(refEnregistrement);
-
-			// Beneficiaire
-			Beneficiaire beneficiaire = new Beneficiaire(refEnregistrement);
-
-			DonneurOrdreInitial donneurOrdreInitial = new DonneurOrdreInitial(refEnregistrement);
-			BeneficiareFinal beneficiareFinal = new BeneficiareFinal(refEnregistrement);
-			InfoComplementaireReg infoComplementaireReg = new InfoComplementaireReg(refEnregistrement);
-			Facture facture1 = new Facture(refEnregistrement);
-			Facture facture2 = new Facture(refEnregistrement);
-			Deduction deduction1 = new Deduction(refEnregistrement);
-			Deduction deduction2 = new Deduction(refEnregistrement);
-
-			List<Deduction> deductions1 = new ArrayList<Deduction>();
-			List<Deduction> deductions2 = new ArrayList<Deduction>();
-			deductions1.add(deduction1);
-			deductions2.add(deduction2);
-			facture1.setDeductions(deductions1);
-			facture2.setDeductions(deductions2);
-			List<Facture> factures = new ArrayList<Facture>();
-			factures.add(facture1);
-			factures.add(facture2);
-
-			CreanceDebiteur creanceDebiteur = new CreanceDebiteur(refEnregistrement);
-			List<CreanceDebiteur> creanceDebiteurs = new ArrayList<CreanceDebiteur>();
-			creanceDebiteurs.add(creanceDebiteur);
-
-			beneficiaire.setDonneurOrdreInitial(donneurOrdreInitial);
-			beneficiaire.setBeneficiareFinal(beneficiareFinal);
-			beneficiaire.setInfoComplementaireReg(infoComplementaireReg);
-			beneficiaire.setFactures(factures);
-			beneficiaire.setCreanceDebiteurs(creanceDebiteurs);
-
-			Divers divers = new Divers(refEnregistrement);
-			Activite activite = new Activite(refEnregistrement);
-			activite.setDivers(divers);
-			beneficiaire.setActivite(activite);
-
-			// Liste des objets reglemenets
-			Reglement reglement1 = new Reglement(refEnregistrement);
-			reglement1.setBeneficiaire(beneficiaire);
-			Reglement reglement2 = new Reglement(refEnregistrement);
-			reglement2.setBeneficiaire(beneficiaire);
-			List<Reglement> listReglement = new ArrayList<Reglement>();
-			listReglement.add(reglement1);
-			listReglement.add(reglement2);
-			banniere.setReglements(listReglement);
-			ArticleFin articleFin = new ArticleFin(refEnregistrement);
-
-			banniere.setArticleFin(articleFin);
+		BeanWriter out = factory.createWriter("BanniereSendFile", new File("src/main/resources/output" + ".txt"));
+		for (int i = 0; i < 2; i++) {
+			// Création de l'objet banniere
+			Banniere banniere = new Banniere("001");
+			banniere.setDateFichier(Integer.valueOf(dateFichier));
 			out.write(banniere);
+			// Création des objets reglemenets
+			Reglement reglement1 = new Reglement("010");
+			reglement1.setDateEcheance(dateAujourdhui);
+			out.write(reglement1);
+
+			// Création de l'objet Beneficiaire
+			Beneficiaire beneficiaire = new Beneficiaire("020");
+
+			out.write(beneficiaire);
+			// Création de l'objet donneur ordre initiale
+			DonneurOrdreInitial donneurOrdreInitial = new DonneurOrdreInitial("030");
+			out.write(donneurOrdreInitial);
+			// Création de l'objet beneficiaire finale
+			BeneficiareFinal beneficiareFinal = new BeneficiareFinal("040");
+			out.write(beneficiareFinal);
+			InfoComplementaireReg infoComplementaireReg = new InfoComplementaireReg("050");
+			out.write(infoComplementaireReg);
+			// Création de l'objet de facture
+			Facture facture1 = new Facture("060");
+			facture1.setDateFacture(dateAujourdhui);
+			out.write(facture1);
+			// Création de l'objet deduction
+			Deduction deduction1 = new Deduction("070");
+			deduction1.setDateDeduction(dateAujourdhui);
+			out.write(deduction1);
+
+			// Création de la creance debiteur
+			CreanceDebiteur creanceDebiteur = new CreanceDebiteur("080");
+			out.write(creanceDebiteur);
+			// Création de l'objet activite
+			Activite activite = new Activite("090");
+			out.write(activite);
+			// Création de l'objet divers
+			Divers divers = new Divers("100");
+			out.write(divers);
+
+			// Création de l'objet article fin
+			ArticleFin articleFin = new ArticleFin("999");
+
+			out.write(articleFin);
+
 		}
 		out.flush();
 		out.close();

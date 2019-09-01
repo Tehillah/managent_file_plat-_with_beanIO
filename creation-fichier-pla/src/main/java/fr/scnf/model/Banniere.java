@@ -18,7 +18,9 @@ public class Banniere {
 	private int nombreEnregistrement;
 
 	private String numeroversion;
+	
 	private List<Reglement> reglements;
+	
 	private ArticleFin articleFin;
 
 	public Banniere(String refEnregistrement) {

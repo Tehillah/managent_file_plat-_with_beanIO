@@ -7,7 +7,7 @@ public class Deduction {
 	private String refEnregistrement;
 	private String numeroDeduction;
 	private String typeDeduction;
-	private int dateDeduction;
+	private String dateDeduction;
 	private int montantDeductionEuro;
 
 	public Deduction(String refEnregistrement) {
@@ -16,8 +16,6 @@ public class Deduction {
 		this.numeroDeduction = RandomStringUtils.randomAlphanumeric(15);
 
 		this.typeDeduction = RandomStringUtils.randomAlphanumeric(1);
-
-		this.dateDeduction = RandomUtils.nextInt(10);
 
 		this.montantDeductionEuro = RandomUtils.nextInt(14);
 
@@ -47,20 +45,20 @@ public class Deduction {
 		this.typeDeduction = typeDeduction;
 	}
 
-	public int getDateDeduction() {
-		return dateDeduction;
-	}
-
-	public void setDateDeduction(int dateDeduction) {
-		this.dateDeduction = dateDeduction;
-	}
-
 	public int getMontantDeductionEuro() {
 		return montantDeductionEuro;
 	}
 
 	public void setMontantDeductionEuro(int montantDeductionEuro) {
 		this.montantDeductionEuro = montantDeductionEuro;
+	}
+
+	public String getDateDeduction() {
+		return dateDeduction;
+	}
+
+	public void setDateDeduction(String dateDeduction) {
+		this.dateDeduction = dateDeduction;
 	}
 
 }

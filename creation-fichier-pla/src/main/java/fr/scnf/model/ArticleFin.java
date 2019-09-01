@@ -3,9 +3,13 @@ package fr.scnf.model;
 import org.apache.commons.lang.RandomStringUtils;
 
 public class ArticleFin {
+	
 	private String refEnregistrement;
+	
 	private String identifiant;
+	
 	private String nombreTotalReglement;
+	
 	private String montantTotalReglement;
 
 	public ArticleFin(String refEnregistrement) {

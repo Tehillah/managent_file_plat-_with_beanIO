@@ -24,11 +24,12 @@ public class Beneficiaire {
 	private String identifiantNumeroCompte;
 	private String qualificationStructureCompte;
 	private String codeBic;
+
 	private DonneurOrdreInitial donneurOrdreInitial;
 	private BeneficiareFinal beneficiareFinal;
 	private InfoComplementaireReg infoComplementaireReg;
 	private List<Facture> factures;
-	private Deduction deduction;
+
 	private List<CreanceDebiteur> creanceDebiteurs;
 	private Activite activite;
 
@@ -212,14 +213,6 @@ public class Beneficiaire {
 
 	public void setBeneficiareFinal(BeneficiareFinal beneficiareFinal) {
 		this.beneficiareFinal = beneficiareFinal;
-	}
-
-	public Deduction getDeduction() {
-		return deduction;
-	}
-
-	public void setDeduction(Deduction deduction) {
-		this.deduction = deduction;
 	}
 
 	public List<Facture> getFactures() {
