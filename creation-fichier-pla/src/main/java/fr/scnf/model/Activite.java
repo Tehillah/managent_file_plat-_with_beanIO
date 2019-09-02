@@ -14,9 +14,9 @@ public class Activite {
 	public Activite(String refEnregistrement) {
 		super();
 		this.refEnregistrement = refEnregistrement;
-		this.codeBuGl = RandomStringUtils.randomAlphanumeric(5);
+//		this.codeBuGl = RandomStringUtils.randomAlphanumeric(5);
 
-		this.codeDivision = RandomStringUtils.randomAlphanumeric(5);
+//		this.codeDivision = RandomStringUtils.randomAlphanumeric(5);
 
 		this.typeCompteOperation = RandomStringUtils.randomAlphanumeric(3);
 

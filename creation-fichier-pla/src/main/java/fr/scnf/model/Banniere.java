@@ -26,9 +26,9 @@ public class Banniere {
 	public Banniere(String refEnregistrement) {
 		super();
 		this.refEnregistrement = refEnregistrement;
-		this.identifant = RandomStringUtils.randomAlphanumeric(15);
+		this.identifant = "ADFR";
 		this.dateFichier = RandomUtils.nextInt(8);
-		this.numeroFichier = RandomUtils.nextInt(6);
+		this.numeroFichier = 000001;
 		this.nombreEnregistrement = RandomUtils.nextInt(7);
 		this.numeroversion = RandomStringUtils.randomAlphanumeric(2);
 	}
