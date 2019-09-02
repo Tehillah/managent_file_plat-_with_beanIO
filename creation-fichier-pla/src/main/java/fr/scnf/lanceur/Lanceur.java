@@ -26,7 +26,7 @@ public class Lanceur {
 		StreamFactory factory = StreamFactory.newInstance();
 		// load the mapping file from the working directory
 		// factory.load("src/main/resources/banniere.xml");
-		factory.load("src/main/resources/configuration.xml");
+		factory.load("src/main/resources/config.xml");
 		SimpleDateFormat formatBannier = new SimpleDateFormat("yyyyMMdd");
 		SimpleDateFormat autreFormat = new SimpleDateFormat("yyyy-MM-dd");
 		Date date = new Date();
