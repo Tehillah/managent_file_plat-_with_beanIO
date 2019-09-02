@@ -15,13 +15,7 @@ import fr.scnf.model.Activite;
 import fr.scnf.model.ArticleFin;
 import fr.scnf.model.Banniere;
 import fr.scnf.model.Beneficiaire;
-import fr.scnf.model.BeneficiareFinal;
-import fr.scnf.model.CreanceDebiteur;
-import fr.scnf.model.Deduction;
-import fr.scnf.model.Divers;
 import fr.scnf.model.DonneurOrdreInitial;
-import fr.scnf.model.Facture;
-import fr.scnf.model.InfoComplementaireReg;
 import fr.scnf.model.Reglement;
 
 public class Lanceur {
@@ -99,7 +93,7 @@ public class Lanceur {
 			Banniere banniere = new Banniere("001");
 			banniere.setDateFichier(Integer.valueOf(dateFichier));
 			banniere.setIdentifant(identifiant);
-			System.out.println("numero fichier:"+banniere.getNumeroFichier());
+			
 			out.write(banniere);
 			for (String codeDivision : codeIdentifiant.get(identifiant)) {
 

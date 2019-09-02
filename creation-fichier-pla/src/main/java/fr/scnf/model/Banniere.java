@@ -13,14 +13,14 @@ public class Banniere {
 
 	private int dateFichier;
 
-	private int numeroFichier;
+	private String numeroFichier;
 
 	private int nombreEnregistrement;
 
 	private String numeroversion;
-	
+
 	private List<Reglement> reglements;
-	
+
 	private ArticleFin articleFin;
 
 	public Banniere(String refEnregistrement) {
@@ -28,7 +28,7 @@ public class Banniere {
 		this.refEnregistrement = refEnregistrement;
 		this.identifant = "ADFR";
 		this.dateFichier = RandomUtils.nextInt(8);
-		this.numeroFichier = 000001;
+		this.numeroFichier = "000001";
 		this.nombreEnregistrement = RandomUtils.nextInt(7);
 		this.numeroversion = RandomStringUtils.randomAlphanumeric(2);
 	}
@@ -57,11 +57,11 @@ public class Banniere {
 		this.dateFichier = dateFichier;
 	}
 
-	public int getNumeroFichier() {
+	public String getNumeroFichier() {
 		return numeroFichier;
 	}
 
-	public void setNumeroFichier(int numeroFichier) {
+	public void setNumeroFichier(String numeroFichier) {
 		this.numeroFichier = numeroFichier;
 	}
 
