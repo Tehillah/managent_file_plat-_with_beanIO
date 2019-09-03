@@ -17,19 +17,19 @@ public class BeneficiareFinal {
 		super();
 		this.refEnregistrement = refEnregistrement;
 		this.numeroBeneficiaireFinal = RandomStringUtils.randomAlphanumeric(10);
-		;
+	
 		this.nomBeneficiaireFinal = RandomStringUtils.randomAlphanumeric(40);
-		;
+	
 		this.adresseBeneficiaireFinal = RandomStringUtils.randomAlphanumeric(32);
-		;
+	
 		this.bureauDistributeurBenefFinal = RandomStringUtils.randomAlphanumeric(26);
-		;
+	
 		this.codePostalBeneficiaireFinal = RandomStringUtils.randomAlphanumeric(12);
-		;
+	
 		this.codePaysBeneficiaireFinal = RandomStringUtils.randomAlphanumeric(3);
-		;
+	
 		this.libellePaysBeneficiaireFinal = RandomStringUtils.randomAlphanumeric(30);
-		;
+	
 	}
 
 	public String getRefEnregistrement() {

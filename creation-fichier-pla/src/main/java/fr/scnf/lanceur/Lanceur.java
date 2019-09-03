@@ -1,13 +1,20 @@
 package fr.scnf.lanceur;
 
 import java.io.File;
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.text.SimpleDateFormat;
-import java.util.Arrays;
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
+import java.util.Set;
 
+import org.beanio.BeanReader;
 import org.beanio.BeanWriter;
 import org.beanio.StreamFactory;
 
@@ -15,6 +22,7 @@ import fr.scnf.model.Activite;
 import fr.scnf.model.ArticleFin;
 import fr.scnf.model.Banniere;
 import fr.scnf.model.Beneficiaire;
+import fr.scnf.model.DonneEntrant;
 import fr.scnf.model.DonneurOrdreInitial;
 import fr.scnf.model.Reglement;
 
@@ -25,81 +33,67 @@ public class Lanceur {
 		// create a BeanIO StreamFactory
 		StreamFactory factory = StreamFactory.newInstance();
 		// load the mapping file from the working directory
-		// factory.load("src/main/resources/banniere.xml");
 		factory.load("src/main/resources/config.xml");
+
+		// Construction des differentes dates
+
 		SimpleDateFormat formatBannier = new SimpleDateFormat("yyyyMMdd");
 		SimpleDateFormat autreFormat = new SimpleDateFormat("yyyy-MM-dd");
 		Date date = new Date();
 		String dateFichier = formatBannier.format(date);
-
 		String dateAujourdhui = autreFormat.format(date);
+		// Instantiation du map pour stocker les données
+		Map<String, List<DonneEntrant>> mapDonneEntrant = new HashMap<>();
 
-		Map<String, List<String>> codeIdentifiant = new HashMap<>();
+		// chargement fichier de lecture cvs
+		// read it from the classpath : src/main/resources
+		BeanReader reader = factory.createReader("donneEntrant", new File("src/main/resources/input/data.csv"));
 
-		codeIdentifiant.put("ADFR", Arrays.asList("0150000768", "0150000770"));
-		codeIdentifiant.put("ANDFFR", Arrays.asList("1007301308", "1007301309"));
-		codeIdentifiant.put("PFFR", Arrays.asList("1007519051", "1007519053"));
-		codeIdentifiant.put("SPFR", Arrays.asList("1234565227", "1234565228"));
-		codeIdentifiant.put("SMFR", Arrays.asList("1333519595", "1333500617"));
-		codeIdentifiant.put("RPPUFR", Arrays.asList("1334019592", "1334066613"));
-		
-		codeIdentifiant.put("ADGC", Arrays.asList("1334200952", "1334300013"));
-		codeIdentifiant.put("ANDFGC", Arrays.asList("1334500001", "1334500002"));
-		codeIdentifiant.put("PFGC", Arrays.asList("1339595760", "1340000674"));
-		codeIdentifiant.put("SPGC", Arrays.asList("1340102141", "1340102142"));
-		codeIdentifiant.put("SMGC", Arrays.asList("1340202135", "1340202136"));
-		codeIdentifiant.put("RPPUGC", Arrays.asList("3025400665", "3025400666"));
-		
-		codeIdentifiant.put("ADHO", Arrays.asList("6615766158", "6615766159"));
-		codeIdentifiant.put("ANDFHO", Arrays.asList("6615766160", "6615766161"));
-		codeIdentifiant.put("PFHO", Arrays.asList("1340502124", "1340502125"));
-		codeIdentifiant.put("SPHO", Arrays.asList("1340502126", "1340502127"));
-		codeIdentifiant.put("SMHO", Arrays.asList("1340502128", "1340502129"));
-		codeIdentifiant.put("RPPUHO", Arrays.asList("1340502130", "1340202135"));
-		
-		codeIdentifiant.put("ADNM", Arrays.asList("1007318979", "1007300342"));
-		codeIdentifiant.put("ANDFNM", Arrays.asList("1334019522", "1334001663"));
-		codeIdentifiant.put("PFNM", Arrays.asList("1007519009", "1007519021"));
-		codeIdentifiant.put("SPNM", Arrays.asList("1334300011", "1334300012"));
-		codeIdentifiant.put("SMNM", Arrays.asList("0150018974", "0150018974"));
-		codeIdentifiant.put("RPPUNM", Arrays.asList("0150000773", "0150000774"));
-		
-		codeIdentifiant.put("ADR", Arrays.asList("1334564882", "1334565346"));
-		codeIdentifiant.put("BPADR", Arrays.asList("1334536115", "1334536117"));
-		codeIdentifiant.put("PFR", Arrays.asList("1334536112", "1334536113"));
-		codeIdentifiant.put("SPR", Arrays.asList("1334519606", "1334520863"));
-		codeIdentifiant.put("SMR", Arrays.asList("1334516937", "1334516847"));
-		codeIdentifiant.put("RPLRDIR", Arrays.asList("1334500003", "1334510079"));
-		
-		codeIdentifiant.put("ADMO", Arrays.asList("0150018974", "0150000768"));
-		codeIdentifiant.put("ANDFM", Arrays.asList("0150000770", "0150000772"));
-		codeIdentifiant.put("RMMO", Arrays.asList("0150000773", "0150000774"));
-		codeIdentifiant.put("SPMO", Arrays.asList("0150000775", "0150000776"));
-		codeIdentifiant.put("SENMO", Arrays.asList("0150000778", "0150000779"));
-		codeIdentifiant.put("RPPUM", Arrays.asList("0150018954", "0150018967"));
-		
-		codeIdentifiant.put("ADT", Arrays.asList("1340402120", "1340402121"));
-		codeIdentifiant.put("ANDFT", Arrays.asList("1340402122", "1334300011"));
-		codeIdentifiant.put("OPPOT", Arrays.asList("1334300012", "1334300013"));
-		codeIdentifiant.put("SPT", Arrays.asList("1007300342", "1007301308"));
-		codeIdentifiant.put("RMT", Arrays.asList("1007301309", "1007301310"));
-		codeIdentifiant.put("RPPUT", Arrays.asList("1007301311", "1007318962"));
+		Object record = null;
+		List<DonneEntrant> donneEntrants = new ArrayList<>();
 
-		for (String identifiant : codeIdentifiant.keySet()) {
+		Set<String> listIdentifiants = new HashSet<>();
+
+		// lecture du fichier "data.csv" et le stockage dans les tableaux
+		while ((record = reader.read()) != null) {
+			DonneEntrant donneEntrant = (DonneEntrant) record;
+			donneEntrants.add(donneEntrant);
+			listIdentifiants.add(donneEntrant.getIdentifiant());
+		}
+
+		// Contruction du map pour classer les objects en fonction des identifiants
+		for (String identifiant : listIdentifiants) {
+			String key=null;
+			List<DonneEntrant> datas = new ArrayList<>();
+			for (DonneEntrant donneEntrantTraite : donneEntrants) {
+
+				if (identifiant.equals(donneEntrantTraite.getIdentifiant())) {
+					key=identifiant+donneEntrantTraite.getNom();
+					datas.add(donneEntrantTraite);
+				}
+			}
+			mapDonneEntrant.put(key, datas);
+		}
+		//itération sur l'objet map
+		for (String identifiant : mapDonneEntrant.keySet()) {
 			// create a BeanWriter to write to "output.csv"
+			List<DonneEntrant> datas=mapDonneEntrant.get(identifiant);
+			new Lanceur().ContruireRepertoire("src/main/resources/"+datas.get(0).getNom());
+			
 			BeanWriter out = factory.createWriter("BanniereSendFile",
-					new File("src/main/resources/output" + identifiant + ".txt"));
+					new File("src/main/resources/"+datas.get(0).getNom()+"/output" + identifiant + ".txt"));
 			// Création de l'objet banniere
 			Banniere banniere = new Banniere("001");
 			banniere.setDateFichier(Integer.valueOf(dateFichier));
 			banniere.setIdentifant(identifiant);
-			
+
 			out.write(banniere);
-			for (String codeDivision : codeIdentifiant.get(identifiant)) {
+			for (DonneEntrant donneEntrant : mapDonneEntrant.get(identifiant)) {
 
 				// Création des objets reglemenets
 				Reglement reglement1 = new Reglement("010");
 				reglement1.setDateEcheance(dateAujourdhui);
+				reglement1.setMontantDuReglementEnEuro(donneEntrant.getMontantBeneficiciaire());
 				out.write(reglement1);
 
 				// Création de l'objet Beneficiaire
@@ -128,7 +122,7 @@ public class Lanceur {
 //				out.write(creanceDebiteur);
 				// Création de l'objet activite
 				Activite activite = new Activite("090");
-				activite.setCodeDivision(codeDivision);
+				activite.setCodeDivision(donneEntrant.getCodeDivision());
 				out.write(activite);
 				// Création de l'objet divers
 //				Divers divers = new Divers("100");
@@ -145,4 +139,17 @@ public class Lanceur {
 
 	}
 
+	private void ContruireRepertoire(String chemin) {
+		 Path path = Paths.get(chemin);
+	        //if directory exists?
+	        if (!Files.exists(path)) {
+	            try {
+	                Files.createDirectories(path);
+	            } catch (IOException e) {
+	                //fail to create directory
+	                e.printStackTrace();
+	            }
+	        }
+	}
+	
 }

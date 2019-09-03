@@ -15,7 +15,7 @@ public class Banniere {
 
 	private String numeroFichier;
 
-	private int nombreEnregistrement;
+	private String nombreEnregistrement;
 
 	private String numeroversion;
 
@@ -29,8 +29,8 @@ public class Banniere {
 		this.identifant = "ADFR";
 		this.dateFichier = RandomUtils.nextInt(8);
 		this.numeroFichier = "000001";
-		this.nombreEnregistrement = RandomUtils.nextInt(7);
-		this.numeroversion = RandomStringUtils.randomAlphanumeric(2);
+		this.nombreEnregistrement = "0000010";
+		this.numeroversion = "V5";
 	}
 
 	public String getRefEnregistrement() {
@@ -65,11 +65,11 @@ public class Banniere {
 		this.numeroFichier = numeroFichier;
 	}
 
-	public int getNombreEnregistrement() {
+	public String getNombreEnregistrement() {
 		return nombreEnregistrement;
 	}
 
-	public void setNombreEnregistrement(int nombreEnregistrement) {
+	public void setNombreEnregistrement(String nombreEnregistrement) {
 		this.nombreEnregistrement = nombreEnregistrement;
 	}
 

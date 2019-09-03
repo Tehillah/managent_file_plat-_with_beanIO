@@ -12,9 +12,9 @@ public class Reglement {
 	private String typeReglement;
 
 	private String libelleOperation;
-	private int montantDuReglementEnEuro;
+	private String montantDuReglementEnEuro;
 	private String codeDevise;
-	private int montantDuReglementEnDevise;
+	private String montantDuReglementEnDevise;
 
 	private int nmbreDecimal;
 	private String indicateurMontant;
@@ -35,30 +35,30 @@ public class Reglement {
 	public Reglement(String refEnregistrement) {
 		super();
 		this.refEnregistrement = refEnregistrement;
-		this.refReglement = RandomStringUtils.randomAlphanumeric(10);
-		this.modePayement = RandomStringUtils.randomAlphanumeric(3);
+		this.refReglement = "7109749N";
+		this.modePayement = "VIR";
 
-		this.typeReglement = RandomStringUtils.randomAlphanumeric(3);
+		this.typeReglement = "ORD";
 
-		this.libelleOperation = RandomStringUtils.randomAlphanumeric(31);
+		this.libelleOperation = "SNCF 7109749N 00001ACOMPTE SUR";
 
-		this.montantDuReglementEnEuro = RandomUtils.nextInt(14);
+		this.montantDuReglementEnEuro = "00000000180000";
 
-		this.codeDevise = RandomStringUtils.randomAlphanumeric(3);
+		this.codeDevise = "EUR";
 
-		this.montantDuReglementEnDevise = RandomUtils.nextInt(15);
+		this.montantDuReglementEnDevise = "000000000000000";
 
-		this.nmbreDecimal = RandomUtils.nextInt(1);
+		this.nmbreDecimal = 2;
 
-		this.indicateurMontant = RandomStringUtils.randomAlphanumeric(1);
+		this.indicateurMontant = "O";
 
-		this.dateEcheance = RandomStringUtils.randomAlphanumeric(10);
+//		this.dateEcheance = ;
 
-		this.codeRegroupement = RandomStringUtils.randomAlphanumeric(10);
+//		this.codeRegroupement = ;
 
-		this.referenceEmission = RandomStringUtils.randomAlphanumeric(10);
+//		this.referenceEmission = ;
 
-		this.zoneReserve = RandomStringUtils.randomAlphanumeric(3);
+//		this.zoneReserve = ;
 
 		this.lettrage = RandomStringUtils.randomAlphanumeric(30);
 
@@ -108,11 +108,11 @@ public class Reglement {
 		this.libelleOperation = libelleOperation;
 	}
 
-	public int getMontantDuReglementEnEuro() {
+	public String getMontantDuReglementEnEuro() {
 		return montantDuReglementEnEuro;
 	}
 
-	public void setMontantDuReglementEnEuro(int montantDuReglementEnEuro) {
+	public void setMontantDuReglementEnEuro(String montantDuReglementEnEuro) {
 		this.montantDuReglementEnEuro = montantDuReglementEnEuro;
 	}
 
@@ -124,11 +124,11 @@ public class Reglement {
 		this.codeDevise = codeDevise;
 	}
 
-	public int getMontantDuReglementEnDevise() {
+	public String getMontantDuReglementEnDevise() {
 		return montantDuReglementEnDevise;
 	}
 
-	public void setMontantDuReglementEnDevise(int montantDuReglementEnDevise) {
+	public void setMontantDuReglementEnDevise(String montantDuReglementEnDevise) {
 		this.montantDuReglementEnDevise = montantDuReglementEnDevise;
 	}
 
