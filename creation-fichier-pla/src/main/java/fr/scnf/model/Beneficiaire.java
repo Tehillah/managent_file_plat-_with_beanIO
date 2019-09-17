@@ -1,74 +1,37 @@
 package fr.scnf.model;
 
-import java.util.List;
-
-import org.apache.commons.lang.RandomStringUtils;
-
 public class Beneficiaire {
 
-	private String refEnregistrement;
+	private String refEnregistrementBeneficiaire;
 	private String numeroBeneficiaire;
 	private String siretBeneficiare;
 	private String titreCivile;
 	private String nomBeneficiaire;
 	private String nomComplementaire;
-	private String zoneReserve;
+	private String zoneReserveeBeneficiaire;
 	private String nomOrdreCheque;
 	private String nomComplementaireOrdreCheque;
 	private String adresseBeneficiaire;
+	private String adresseComplementaireBeneficiaire;
 	private String bureauDistributeurBenef;
 	private String codePostalBenef;
 	private String codePaysBenef;
 	private String libellePaysBenef;
 	private String libelleBanqueBenef;
 	private String identifiantNumeroCompte;
-	private String qualificationStructureCompte;
+	private String qualifiantStructureCompte;
 	private String codeBic;
 
-	private DonneurOrdreInitial donneurOrdreInitial;
-	private BeneficiareFinal beneficiareFinal;
-	private InfoComplementaireReg infoComplementaireReg;
-	private List<Facture> factures;
-
-	private List<CreanceDebiteur> creanceDebiteurs;
-	private Activite activite;
-
-	public Beneficiaire(String refEnregistrement) {
+	public Beneficiaire() {
 		super();
-		this.refEnregistrement = refEnregistrement;
-		this.numeroBeneficiaire = RandomStringUtils.randomAlphanumeric(10);
-		this.siretBeneficiare = RandomStringUtils.randomAlphanumeric(14);
-		this.titreCivile = RandomStringUtils.randomAlphanumeric(1);
-		this.nomBeneficiaire = RandomStringUtils.randomAlphanumeric(40);
-		this.nomComplementaire = RandomStringUtils.randomAlphanumeric(30);
-		this.zoneReserve = RandomStringUtils.randomAlphanumeric(10);
-		this.nomOrdreCheque = RandomStringUtils.randomAlphanumeric(32);
-		this.nomComplementaireOrdreCheque = RandomStringUtils.randomAlphanumeric(32);
-		this.adresseBeneficiaire = RandomStringUtils.randomAlphanumeric(32);
-		this.bureauDistributeurBenef = RandomStringUtils.randomAlphanumeric(26);
-		this.codePostalBenef = RandomStringUtils.randomAlphanumeric(12);
-		this.codePaysBenef = RandomStringUtils.randomAlphanumeric(3);
-		this.libellePaysBenef = RandomStringUtils.randomAlphanumeric(30);
-		this.libelleBanqueBenef = RandomStringUtils.randomAlphanumeric(30);
-		this.identifiantNumeroCompte = RandomStringUtils.randomAlphanumeric(34);
-		this.qualificationStructureCompte = RandomStringUtils.randomAlphanumeric(1);
-		this.codeBic = RandomStringUtils.randomAlphanumeric(11);
 	}
 
-	public String getNomComplementaire() {
-		return nomComplementaire;
+	public String getRefEnregistrementBeneficiaire() {
+		return refEnregistrementBeneficiaire;
 	}
 
-	public void setNomComplementaire(String nomComplementaire) {
-		this.nomComplementaire = nomComplementaire;
-	}
-
-	public String getRefEnregistrement() {
-		return refEnregistrement;
-	}
-
-	public void setRefEnregistrement(String refEnregistrement) {
-		this.refEnregistrement = refEnregistrement;
+	public void setRefEnregistrementBeneficiaire(String refEnregistrementBeneficiaire) {
+		this.refEnregistrementBeneficiaire = refEnregistrementBeneficiaire;
 	}
 
 	public String getNumeroBeneficiaire() {
@@ -103,12 +66,20 @@ public class Beneficiaire {
 		this.nomBeneficiaire = nomBeneficiaire;
 	}
 
-	public String getZoneReserve() {
-		return zoneReserve;
+	public String getNomComplementaire() {
+		return nomComplementaire;
 	}
 
-	public void setZoneReserve(String zoneReserve) {
-		this.zoneReserve = zoneReserve;
+	public void setNomComplementaire(String nomComplementaire) {
+		this.nomComplementaire = nomComplementaire;
+	}
+
+	public String getZoneReserveeBeneficiaire() {
+		return zoneReserveeBeneficiaire;
+	}
+
+	public void setZoneReserveeBeneficiaire(String zoneReserveeBeneficiaire) {
+		this.zoneReserveeBeneficiaire = zoneReserveeBeneficiaire;
 	}
 
 	public String getNomOrdreCheque() {
@@ -133,6 +104,14 @@ public class Beneficiaire {
 
 	public void setAdresseBeneficiaire(String adresseBeneficiaire) {
 		this.adresseBeneficiaire = adresseBeneficiaire;
+	}
+
+	public String getAdresseComplementaireBeneficiaire() {
+		return adresseComplementaireBeneficiaire;
+	}
+
+	public void setAdresseComplementaireBeneficiaire(String adresseComplementaireBeneficiaire) {
+		this.adresseComplementaireBeneficiaire = adresseComplementaireBeneficiaire;
 	}
 
 	public String getBureauDistributeurBenef() {
@@ -183,12 +162,12 @@ public class Beneficiaire {
 		this.identifiantNumeroCompte = identifiantNumeroCompte;
 	}
 
-	public String getQualificationStructureCompte() {
-		return qualificationStructureCompte;
+	public String getQualifiantStructureCompte() {
+		return qualifiantStructureCompte;
 	}
 
-	public void setQualificationStructureCompte(String qualificationStructureCompte) {
-		this.qualificationStructureCompte = qualificationStructureCompte;
+	public void setQualifiantStructureCompte(String qualifiantStructureCompte) {
+		this.qualifiantStructureCompte = qualifiantStructureCompte;
 	}
 
 	public String getCodeBic() {
@@ -197,54 +176,6 @@ public class Beneficiaire {
 
 	public void setCodeBic(String codeBic) {
 		this.codeBic = codeBic;
-	}
-
-	public DonneurOrdreInitial getDonneurOrdreInitial() {
-		return donneurOrdreInitial;
-	}
-
-	public void setDonneurOrdreInitial(DonneurOrdreInitial donneurOrdreInitial) {
-		this.donneurOrdreInitial = donneurOrdreInitial;
-	}
-
-	public BeneficiareFinal getBeneficiareFinal() {
-		return beneficiareFinal;
-	}
-
-	public void setBeneficiareFinal(BeneficiareFinal beneficiareFinal) {
-		this.beneficiareFinal = beneficiareFinal;
-	}
-
-	public List<Facture> getFactures() {
-		return factures;
-	}
-
-	public void setFactures(List<Facture> factures) {
-		this.factures = factures;
-	}
-
-	public List<CreanceDebiteur> getCreanceDebiteurs() {
-		return creanceDebiteurs;
-	}
-
-	public void setCreanceDebiteurs(List<CreanceDebiteur> creanceDebiteurs) {
-		this.creanceDebiteurs = creanceDebiteurs;
-	}
-
-	public Activite getActivite() {
-		return activite;
-	}
-
-	public void setActivite(Activite activite) {
-		this.activite = activite;
-	}
-
-	public InfoComplementaireReg getInfoComplementaireReg() {
-		return infoComplementaireReg;
-	}
-
-	public void setInfoComplementaireReg(InfoComplementaireReg infoComplementaireReg) {
-		this.infoComplementaireReg = infoComplementaireReg;
 	}
 
 }

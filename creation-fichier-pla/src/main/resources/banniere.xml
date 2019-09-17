@@ -6,9 +6,9 @@
 		<record name="BanniereBean" class="fr.scnf.model.Banniere">
 			<field name="refEnregistrement" length="3" type="string" />
 			<field name="identifant" length="15" type="string" />
-			<field name="dateFichier" length="8" type="int" padding="0" />
-			<field name="numeroFichier" length="6" type="int" padding="0" />
-			<field name="nombreEnregistrement" length="7" type="int" />
+			<field name="dateFichier" length="8" type="string" padding="0" />
+			<field name="numeroFichier" length="6" type="string" padding="0" />
+			<field name="nombreEnregistrement" length="7" type="string" />
 			<field name="numeroversion" length="2" type="string" />
 			<segment name="reglements" collection="list" class="fr.scnf.model.Reglement">
 				<field name="refEnregistrement" length="3" type="string" />
@@ -18,11 +18,11 @@
 				<field name="typeReglement" length="3" type="string"
 					padding="0" />
 				<field name="libelleOperation" length="31" type="string" />
-				<field name="montantDuReglementEnEuro" length="14" type="int" />
+				<field name="montantDuReglementEnEuro" length="14" type="string" />
 				<field name="codeDevise" length="3" type="string" padding="0" />
 				<field name="montantDuReglementEnDevise" length="15"
-					type="int" padding="0" />
-				<field name="nmbreDecimal" length="1" type="int" />
+					type="string" padding="0" />
+				<field name="nmbreDecimal" length="1" type="string" />
 				<field name="indicateurMontant" length="1" type="string" />
 				<field name="dateEcheance" length="10" type="string"
 					padding="0" />
@@ -144,9 +144,9 @@
 							<field name="numeroDeduction" length="15" type="string" />
 							<field name="typeDeduction" length="1" type="string"
 								padding="0" />
-							<field name="dateDeduction" length="10" type="int"
+							<field name="dateDeduction" length="10" type="string"
 								padding="0" />
-							<field name="montantDeductionEuro" length="14" type="int" />
+							<field name="montantDeductionEuro" length="14" type="string" />
 						</segment>
 					</segment>
 					<!-- Creance -->
@@ -156,7 +156,7 @@
 						<field name="refDuCreance" length="35" type="string" />
 						<field name="libelleCreance" length="60" type="string" />
 						<field name="libelleDetailCreance" length="60" type="string" />
-						<field name="montantDetailCreance" length="14" type="int" />
+						<field name="montantDetailCreance" length="14" type="string" />
 						<field name="numeroDebiteur" length="10" type="string" />
 						<field name="nomDebiteur" length="40" type="string" />
 					</segment>

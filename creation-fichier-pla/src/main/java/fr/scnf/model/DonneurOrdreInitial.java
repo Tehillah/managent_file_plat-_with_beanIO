@@ -1,45 +1,30 @@
 package fr.scnf.model;
 
-import org.apache.commons.lang.RandomStringUtils;
-
 public class DonneurOrdreInitial {
-	private String refEnregistrement;
+	private String refEnregistrementDonneurOrdreInitial;
 	private String nomDonneurOrdre;
 	private String referenceDuService;
 	private String nomService;
 	private String adresseService;
-	private String bureauDistributeur;
-	private String codePostal;
+	private String bureauDistributeurService;
+	private String codePostalService;
 	private String codeEtablissementComptable;
 	private String codeEtablissement;
 	private String libelleEtablissement;
-	private String nomEtablissement;
-	private String numeroTelephone;
+	private String nomResponsable;
+	private String numeroTelephoneResponsable;
 	private String emailResponsable;
 
-	public DonneurOrdreInitial(String refEnregistrement) {
+	public DonneurOrdreInitial() {
 		super();
-		this.refEnregistrement = refEnregistrement;
-		this.nomDonneurOrdre = RandomStringUtils.randomAlphanumeric(40);
-		this.referenceDuService = RandomStringUtils.randomAlphanumeric(10);
-		this.nomService = RandomStringUtils.randomAlphanumeric(50);
-		this.adresseService = RandomStringUtils.randomAlphanumeric(32);
-		this.bureauDistributeur = RandomStringUtils.randomAlphanumeric(26);
-		this.codePostal = RandomStringUtils.randomAlphanumeric(12);
-		this.codeEtablissementComptable = RandomStringUtils.randomAlphanumeric(10);
-		this.codeEtablissement = RandomStringUtils.randomAlphanumeric(10);
-		this.libelleEtablissement = RandomStringUtils.randomAlphanumeric(50);
-		this.nomEtablissement = RandomStringUtils.randomAlphanumeric(50);
-		this.numeroTelephone = RandomStringUtils.randomAlphanumeric(14);
-		this.emailResponsable = RandomStringUtils.randomAlphanumeric(60);
 	}
 
-	public String getRefEnregistrement() {
-		return refEnregistrement;
+	public String getRefEnregistrementDonneurOrdreInitial() {
+		return refEnregistrementDonneurOrdreInitial;
 	}
 
-	public void setRefEnregistrement(String refEnregistrement) {
-		this.refEnregistrement = refEnregistrement;
+	public void setRefEnregistrementDonneurOrdreInitial(String refEnregistrementDonneurOrdreInitial) {
+		this.refEnregistrementDonneurOrdreInitial = refEnregistrementDonneurOrdreInitial;
 	}
 
 	public String getNomDonneurOrdre() {
@@ -74,20 +59,20 @@ public class DonneurOrdreInitial {
 		this.adresseService = adresseService;
 	}
 
-	public String getBureauDistributeur() {
-		return bureauDistributeur;
+	public String getBureauDistributeurService() {
+		return bureauDistributeurService;
 	}
 
-	public void setBureauDistributeur(String bureauDistributeur) {
-		this.bureauDistributeur = bureauDistributeur;
+	public void setBureauDistributeurService(String bureauDistributeurService) {
+		this.bureauDistributeurService = bureauDistributeurService;
 	}
 
-	public String getCodePostal() {
-		return codePostal;
+	public String getCodePostalService() {
+		return codePostalService;
 	}
 
-	public void setCodePostal(String codePostal) {
-		this.codePostal = codePostal;
+	public void setCodePostalService(String codePostalService) {
+		this.codePostalService = codePostalService;
 	}
 
 	public String getCodeEtablissementComptable() {
@@ -114,20 +99,20 @@ public class DonneurOrdreInitial {
 		this.libelleEtablissement = libelleEtablissement;
 	}
 
-	public String getNomEtablissement() {
-		return nomEtablissement;
+	public String getNomResponsable() {
+		return nomResponsable;
 	}
 
-	public void setNomEtablissement(String nomEtablissement) {
-		this.nomEtablissement = nomEtablissement;
+	public void setNomResponsable(String nomResponsable) {
+		this.nomResponsable = nomResponsable;
 	}
 
-	public String getNumeroTelephone() {
-		return numeroTelephone;
+	public String getNumeroTelephoneResponsable() {
+		return numeroTelephoneResponsable;
 	}
 
-	public void setNumeroTelephone(String numeroTelephone) {
-		this.numeroTelephone = numeroTelephone;
+	public void setNumeroTelephoneResponsable(String numeroTelephoneResponsable) {
+		this.numeroTelephoneResponsable = numeroTelephoneResponsable;
 	}
 
 	public String getEmailResponsable() {

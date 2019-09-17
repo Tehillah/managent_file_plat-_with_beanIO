@@ -1,59 +1,44 @@
 package fr.scnf.model;
 
-import java.util.List;
-
-import org.apache.commons.lang.RandomStringUtils;
-import org.apache.commons.lang.math.RandomUtils;
-
 public class Banniere {
 
-	private String refEnregistrement;
-
-	private String identifant;
-
-	private int dateFichier;
-
+	private String entite;
+	private String refEnregistrementBanniere;
+	private String identifiant;
+	private String dateFichier;
 	private String numeroFichier;
-
-	private String nombreEnregistrement;
-
+	private String nombreEnregistrements;
 	private String numeroversion;
 
-	private List<Reglement> reglements;
-
-	private ArticleFin articleFin;
-
-	public Banniere(String refEnregistrement) {
-		super();
-		this.refEnregistrement = refEnregistrement;
-		this.identifant = "ADFR";
-		this.dateFichier = RandomUtils.nextInt(8);
-		this.numeroFichier = "000001";
-		this.nombreEnregistrement = "0000010";
-		this.numeroversion = "V5";
+	public String getEntite() {
+		return entite;
 	}
 
-	public String getRefEnregistrement() {
-		return refEnregistrement;
+	public void setEntite(String entite) {
+		this.entite = entite;
 	}
 
-	public void setRefEnregistrement(String refEnregistrement) {
-		this.refEnregistrement = refEnregistrement;
+	public String getRefEnregistrementBanniere() {
+		return refEnregistrementBanniere;
 	}
 
-	public String getIdentifant() {
-		return identifant;
+	public void setRefEnregistrementBanniere(String refEnregistrementBanniere) {
+		this.refEnregistrementBanniere = refEnregistrementBanniere;
 	}
 
-	public void setIdentifant(String identifant) {
-		this.identifant = identifant;
+	public String getIdentifiant() {
+		return identifiant;
 	}
 
-	public int getDateFichier() {
+	public void setIdentifiant(String identifiant) {
+		this.identifiant = identifiant;
+	}
+
+	public String getDateFichier() {
 		return dateFichier;
 	}
 
-	public void setDateFichier(int dateFichier) {
+	public void setDateFichier(String dateFichier) {
 		this.dateFichier = dateFichier;
 	}
 
@@ -65,12 +50,12 @@ public class Banniere {
 		this.numeroFichier = numeroFichier;
 	}
 
-	public String getNombreEnregistrement() {
-		return nombreEnregistrement;
+	public String getNombreEnregistrements() {
+		return nombreEnregistrements;
 	}
 
-	public void setNombreEnregistrement(String nombreEnregistrement) {
-		this.nombreEnregistrement = nombreEnregistrement;
+	public void setNombreEnregistrements(String nombreEnregistrements) {
+		this.nombreEnregistrements = nombreEnregistrements;
 	}
 
 	public String getNumeroversion() {
@@ -79,22 +64,6 @@ public class Banniere {
 
 	public void setNumeroversion(String numeroversion) {
 		this.numeroversion = numeroversion;
-	}
-
-	public List<Reglement> getReglements() {
-		return reglements;
-	}
-
-	public void setReglements(List<Reglement> reglements) {
-		this.reglements = reglements;
-	}
-
-	public ArticleFin getArticleFin() {
-		return articleFin;
-	}
-
-	public void setArticleFin(ArticleFin articleFin) {
-		this.articleFin = articleFin;
 	}
 
 }

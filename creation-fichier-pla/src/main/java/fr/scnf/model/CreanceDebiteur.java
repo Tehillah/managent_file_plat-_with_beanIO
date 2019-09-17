@@ -1,52 +1,42 @@
 package fr.scnf.model;
 
-import org.apache.commons.lang.RandomStringUtils;
-import org.apache.commons.lang.math.RandomUtils;
-
 public class CreanceDebiteur {
-	private String refEnregistrement;
-	private String refDeLaCreance;
-	private String refDuCreance;
+	private String refEnregistrementCreanceDebiteur;
+	private String refCreance;
+	private String refCreancier;
 	private String libelleCreance;
 	private String libelleDetailCreance;
-	private int montantDetailCreance;
+	private String montantDetailCreance;
 	private String numeroDebiteur;
 	private String nomDebiteur;
 
-	public CreanceDebiteur(String refEnregistrement) {
+	public CreanceDebiteur() {
 		super();
-		this.refEnregistrement = refEnregistrement;
-		this.refDeLaCreance = RandomStringUtils.randomAlphanumeric(30);
-		this.refDuCreance = RandomStringUtils.randomAlphanumeric(35);
-		this.libelleCreance = RandomStringUtils.randomAlphanumeric(60);
-		this.libelleDetailCreance = RandomStringUtils.randomAlphanumeric(60);
-		this.montantDetailCreance = RandomUtils.nextInt(14);
-		this.numeroDebiteur = RandomStringUtils.randomAlphanumeric(10);
-		this.nomDebiteur = RandomStringUtils.randomAlphanumeric(40);
+
 	}
 
-	public String getRefEnregistrement() {
-		return refEnregistrement;
+	public String getRefEnregistrementCreanceDebiteur() {
+		return refEnregistrementCreanceDebiteur;
 	}
 
-	public void setRefEnregistrement(String refEnregistrement) {
-		this.refEnregistrement = refEnregistrement;
+	public void setRefEnregistrementCreanceDebiteur(String refEnregistrementCreanceDebiteur) {
+		this.refEnregistrementCreanceDebiteur = refEnregistrementCreanceDebiteur;
 	}
 
-	public String getRefDeLaCreance() {
-		return refDeLaCreance;
+	public String getRefCreance() {
+		return refCreance;
 	}
 
-	public void setRefDeLaCreance(String refDeLaCreance) {
-		this.refDeLaCreance = refDeLaCreance;
+	public void setRefCreance(String refCreance) {
+		this.refCreance = refCreance;
 	}
 
-	public String getRefDuCreance() {
-		return refDuCreance;
+	public String getRefCreancier() {
+		return refCreancier;
 	}
 
-	public void setRefDuCreance(String refDuCreance) {
-		this.refDuCreance = refDuCreance;
+	public void setRefCreancier(String refCreancier) {
+		this.refCreancier = refCreancier;
 	}
 
 	public String getLibelleCreance() {
@@ -65,11 +55,11 @@ public class CreanceDebiteur {
 		this.libelleDetailCreance = libelleDetailCreance;
 	}
 
-	public int getMontantDetailCreance() {
+	public String getMontantDetailCreance() {
 		return montantDetailCreance;
 	}
 
-	public void setMontantDetailCreance(int montantDetailCreance) {
+	public void setMontantDetailCreance(String montantDetailCreance) {
 		this.montantDetailCreance = montantDetailCreance;
 	}
 

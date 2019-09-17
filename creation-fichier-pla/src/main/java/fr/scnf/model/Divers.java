@@ -1,121 +1,108 @@
 package fr.scnf.model;
 
-import org.apache.commons.lang.RandomStringUtils;
-
 public class Divers {
-	private String refEnregistrement;
-	private String champs1;
-	private String champs2;
-	private String champs3;
-	private String champs4;
-	private String champs5;
-	private String champs6;
-	private String champs7;
-	private String champs8;
-	private String champs9;
-	private String champs10;
+	private String refEnregistrementDivers;
+	private String champ1;
+	private String champ2;
+	private String champ3;
+	private String champ4;
+	private String champ5;
+	private String champ6;
+	private String champ7;
+	private String champ8;
+	private String champ9;
+	private String champ10;
 
-	public Divers(String refEnregistrement) {
-		super();
-		this.refEnregistrement = refEnregistrement;
-		this.champs1 = RandomStringUtils.randomAlphanumeric(30);
-		this.champs2 = RandomStringUtils.randomAlphanumeric(30);
-		this.champs3 = RandomStringUtils.randomAlphanumeric(30);
-		this.champs4 = RandomStringUtils.randomAlphanumeric(30);
-		this.champs5 = RandomStringUtils.randomAlphanumeric(30);
-		this.champs6 = RandomStringUtils.randomAlphanumeric(30);
-		this.champs7 = RandomStringUtils.randomAlphanumeric(30);
-		this.champs8 = RandomStringUtils.randomAlphanumeric(30);
-		this.champs9 = RandomStringUtils.randomAlphanumeric(30);
-		this.champs10 = RandomStringUtils.randomAlphanumeric(30);
+	public Divers() {
+		super();		
 	}
 
-	public String getRefEnregistrement() {
-		return refEnregistrement;
+	public String getRefEnregistrementDivers() {
+		return refEnregistrementDivers;
 	}
 
-	public void setRefEnregistrement(String refEnregistrement) {
-		this.refEnregistrement = refEnregistrement;
+	public void setRefEnregistrementDivers(String refEnregistrementDivers) {
+		this.refEnregistrementDivers = refEnregistrementDivers;
 	}
 
-	public String getChamps1() {
-		return champs1;
+	public String getChamp1() {
+		return champ1;
 	}
 
-	public void setChamps1(String champs1) {
-		this.champs1 = champs1;
+	public void setChamp1(String champ1) {
+		this.champ1 = champ1;
 	}
 
-	public String getChamps2() {
-		return champs2;
+	public String getChamp2() {
+		return champ2;
 	}
 
-	public void setChamps2(String champs2) {
-		this.champs2 = champs2;
+	public void setChamp2(String champ2) {
+		this.champ2 = champ2;
 	}
 
-	public String getChamps3() {
-		return champs3;
+	public String getChamp3() {
+		return champ3;
 	}
 
-	public void setChamps3(String champs3) {
-		this.champs3 = champs3;
+	public void setChamp3(String champ3) {
+		this.champ3 = champ3;
 	}
 
-	public String getChamps4() {
-		return champs4;
+	public String getChamp4() {
+		return champ4;
 	}
 
-	public void setChamps4(String champs4) {
-		this.champs4 = champs4;
+	public void setChamp4(String champ4) {
+		this.champ4 = champ4;
 	}
 
-	public String getChamps5() {
-		return champs5;
+	public String getChamp5() {
+		return champ5;
 	}
 
-	public void setChamps5(String champs5) {
-		this.champs5 = champs5;
+	public void setChamp5(String champ5) {
+		this.champ5 = champ5;
 	}
 
-	public String getChamps6() {
-		return champs6;
+	public String getChamp6() {
+		return champ6;
 	}
 
-	public void setChamps6(String champs6) {
-		this.champs6 = champs6;
+	public void setChamp6(String champ6) {
+		this.champ6 = champ6;
 	}
 
-	public String getChamps7() {
-		return champs7;
+	public String getChamp7() {
+		return champ7;
 	}
 
-	public void setChamps7(String champs7) {
-		this.champs7 = champs7;
+	public void setChamp7(String champ7) {
+		this.champ7 = champ7;
 	}
 
-	public String getChamps8() {
-		return champs8;
+	public String getChamp8() {
+		return champ8;
 	}
 
-	public void setChamps8(String champs8) {
-		this.champs8 = champs8;
+	public void setChamp8(String champ8) {
+		this.champ8 = champ8;
 	}
 
-	public String getChamps9() {
-		return champs9;
+	public String getChamp9() {
+		return champ9;
 	}
 
-	public void setChamps9(String champs9) {
-		this.champs9 = champs9;
+	public void setChamp9(String champ9) {
+		this.champ9 = champ9;
 	}
 
-	public String getChamps10() {
-		return champs10;
+	public String getChamp10() {
+		return champ10;
 	}
 
-	public void setChamps10(String champs10) {
-		this.champs10 = champs10;
+	public void setChamp10(String champ10) {
+		this.champ10 = champ10;
 	}
 
 }

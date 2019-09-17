@@ -1,31 +1,22 @@
 package fr.scnf.model;
 
-import org.apache.commons.lang.RandomStringUtils;
-
 public class ArticleFin {
 	
-	private String refEnregistrement;
-	
-	private String identifiant;
-	
-	private String nombreTotalReglement;
-	
+	private String refEnregistrementArticleFin;
+	private String identifiant;	
+	private String nombreTotalReglement;	
 	private String montantTotalReglement;
 
-	public ArticleFin(String refEnregistrement) {
+	public ArticleFin() {
 		super();
-		this.refEnregistrement = refEnregistrement;
-		this.identifiant = RandomStringUtils.randomAlphanumeric(15);
-		this.nombreTotalReglement = RandomStringUtils.randomAlphanumeric(10);
-		this.montantTotalReglement = RandomStringUtils.randomAlphanumeric(14);
+	}
+	
+	public String getRefEnregistrementArticleFin() {
+		return refEnregistrementArticleFin;
 	}
 
-	public String getRefEnregistrement() {
-		return refEnregistrement;
-	}
-
-	public void setRefEnregistrement(String refEnregistrement) {
-		this.refEnregistrement = refEnregistrement;
+	public void setRefEnregistrementArticleFin(String refEnregistrementArticleFin) {
+		this.refEnregistrementArticleFin = refEnregistrementArticleFin;
 	}
 
 	public String getIdentifiant() {

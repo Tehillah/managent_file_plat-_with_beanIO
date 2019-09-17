@@ -1,34 +1,25 @@
 package fr.scnf.model;
 
-import org.apache.commons.lang.RandomStringUtils;
-
 public class InfoComplementaireReg {
 
-	private String refEnregistrement;
+	private String refEnregistrementInfoComplementaireReg;
 	private String adresseBanqueEtrangere;
 	private String bureauDistributeurBanqEtrangere;
 	private String codePostalBanqEtrangere;
 	private String codePaysBanqEtrangere;
 	private String libellePaysBanqEtrangere;
-	private String zoneReserve;
+	private String zoneReserveeInfoComplementaireReg;
 
-	public InfoComplementaireReg(String refEnregistrement) {
+	public InfoComplementaireReg() {
 		super();
-		this.refEnregistrement = refEnregistrement;
-		this.adresseBanqueEtrangere = RandomStringUtils.randomAlphanumeric(35);
-		this.bureauDistributeurBanqEtrangere = RandomStringUtils.randomAlphanumeric(30);
-		this.codePostalBanqEtrangere = RandomStringUtils.randomAlphanumeric(12);
-		this.codePaysBanqEtrangere = RandomStringUtils.randomAlphanumeric(3);
-		this.libellePaysBanqEtrangere = RandomStringUtils.randomAlphanumeric(30);
-		this.zoneReserve = RandomStringUtils.randomAlphanumeric(3);
+			}
+
+	public String getRefEnregistrementInfoComplementaireReg() {
+		return refEnregistrementInfoComplementaireReg;
 	}
 
-	public String getRefEnregistrement() {
-		return refEnregistrement;
-	}
-
-	public void setRefEnregistrement(String refEnregistrement) {
-		this.refEnregistrement = refEnregistrement;
+	public void setRefEnregistrementInfoComplementaireReg(String refEnregistrementInfoComplementaireReg) {
+		this.refEnregistrementInfoComplementaireReg = refEnregistrementInfoComplementaireReg;
 	}
 
 	public String getAdresseBanqueEtrangere() {
@@ -71,12 +62,12 @@ public class InfoComplementaireReg {
 		this.libellePaysBanqEtrangere = libellePaysBanqEtrangere;
 	}
 
-	public String getZoneReserve() {
-		return zoneReserve;
+	public String getZoneReserveeInfoComplementaireReg() {
+		return zoneReserveeInfoComplementaireReg;
 	}
 
-	public void setZoneReserve(String zoneReserve) {
-		this.zoneReserve = zoneReserve;
+	public void setZoneReserveeInfoComplementaireReg(String zoneReserveeInfoComplementaireReg) {
+		this.zoneReserveeInfoComplementaireReg = zoneReserveeInfoComplementaireReg;
 	}
 
 }

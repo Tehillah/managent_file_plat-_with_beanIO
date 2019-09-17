@@ -1,10 +1,8 @@
 package fr.scnf.model;
 
-import org.apache.commons.lang.RandomStringUtils;
+public class BeneficiaireFinal {
 
-public class BeneficiareFinal {
-
-	private String refEnregistrement;
+	private String refEnregistrementBeneficiaireFinal;
 	private String numeroBeneficiaireFinal;
 	private String nomBeneficiaireFinal;
 	private String adresseBeneficiaireFinal;
@@ -13,31 +11,16 @@ public class BeneficiareFinal {
 	private String codePaysBeneficiaireFinal;
 	private String libellePaysBeneficiaireFinal;
 
-	public BeneficiareFinal(String refEnregistrement) {
+	public BeneficiaireFinal() {
 		super();
-		this.refEnregistrement = refEnregistrement;
-		this.numeroBeneficiaireFinal = RandomStringUtils.randomAlphanumeric(10);
-	
-		this.nomBeneficiaireFinal = RandomStringUtils.randomAlphanumeric(40);
-	
-		this.adresseBeneficiaireFinal = RandomStringUtils.randomAlphanumeric(32);
-	
-		this.bureauDistributeurBenefFinal = RandomStringUtils.randomAlphanumeric(26);
-	
-		this.codePostalBeneficiaireFinal = RandomStringUtils.randomAlphanumeric(12);
-	
-		this.codePaysBeneficiaireFinal = RandomStringUtils.randomAlphanumeric(3);
-	
-		this.libellePaysBeneficiaireFinal = RandomStringUtils.randomAlphanumeric(30);
-	
 	}
 
-	public String getRefEnregistrement() {
-		return refEnregistrement;
+	public String getRefEnregistrementBeneficiaireFinal() {
+		return refEnregistrementBeneficiaireFinal;
 	}
 
-	public void setRefEnregistrement(String refEnregistrement) {
-		this.refEnregistrement = refEnregistrement;
+	public void setRefEnregistrementBeneficiaireFinal(String refEnregistrementBeneficiaireFinal) {
+		this.refEnregistrementBeneficiaireFinal = refEnregistrementBeneficiaireFinal;
 	}
 
 	public String getNumeroBeneficiaireFinal() {

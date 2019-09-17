@@ -1,39 +1,24 @@
 package fr.scnf.model;
 
-import java.util.List;
-
-import org.apache.commons.lang.RandomStringUtils;
-
 public class Facture {
-	private String refEnregistrement;
+	private String refEnregistrementFacture;
 	private String numeroCommande;
 	private String numeroFactureFournisseur;
 	private String typeFacture;
 	private String dateFacture;
 	private String montantFactureEuro;
-	private List<Deduction> deductions;
 
-	public Facture(String refEnregistrement) {
+
+	public Facture() {
 		super();
-		this.refEnregistrement = refEnregistrement;
-		this.numeroCommande = RandomStringUtils.randomAlphanumeric(15);
+			}
 
-		this.numeroFactureFournisseur = RandomStringUtils.randomAlphanumeric(15);
-
-		this.typeFacture = RandomStringUtils.randomAlphanumeric(1);
-
-		this.dateFacture = RandomStringUtils.randomAlphanumeric(10);
-
-		this.montantFactureEuro = RandomStringUtils.randomAlphanumeric(14);
-
+	public String getRefEnregistrementFacture() {
+		return refEnregistrementFacture;
 	}
 
-	public String getRefEnregistrement() {
-		return refEnregistrement;
-	}
-
-	public void setRefEnregistrement(String refEnregistrement) {
-		this.refEnregistrement = refEnregistrement;
+	public void setRefEnregistrementFacture(String refEnregistrementFacture) {
+		this.refEnregistrementFacture = refEnregistrementFacture;
 	}
 
 	public String getNumeroCommande() {
@@ -76,11 +61,4 @@ public class Facture {
 		this.montantFactureEuro = montantFactureEuro;
 	}
 
-	public List<Deduction> getDeductions() {
-		return deductions;
-	}
-
-	public void setDeductions(List<Deduction> deductions) {
-		this.deductions = deductions;
-	}
 }

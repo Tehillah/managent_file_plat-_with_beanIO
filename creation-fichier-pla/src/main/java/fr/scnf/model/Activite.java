@@ -1,29 +1,17 @@
 package fr.scnf.model;
 
-import org.apache.commons.lang.RandomStringUtils;
-
 public class Activite {
-	private String refEnregistrement;
+	private String refEnregistrementActivite;
 	private String codeBuGl;
 	private String codeDivision;
 	private String typeCompteOperation;
-	private String champs1;
-	private String champs2;
+	private String champ1Activite;
+	private String champ2Activite;
+
 	private Divers divers;
 
-	public Activite(String refEnregistrement) {
+	public Activite() {
 		super();
-		this.refEnregistrement = refEnregistrement;
-//		this.codeBuGl = RandomStringUtils.randomAlphanumeric(5);
-
-//		this.codeDivision = RandomStringUtils.randomAlphanumeric(5);
-
-		this.typeCompteOperation = RandomStringUtils.randomAlphanumeric(3);
-
-		this.champs1 = RandomStringUtils.randomAlphanumeric(10);
-
-		this.champs2 = RandomStringUtils.randomAlphanumeric(10);
-
 	}
 
 	public Divers getDivers() {
@@ -34,12 +22,12 @@ public class Activite {
 		this.divers = divers;
 	}
 
-	public String getRefEnregistrement() {
-		return refEnregistrement;
+	public String getRefEnregistrementActivite() {
+		return refEnregistrementActivite;
 	}
 
-	public void setRefEnregistrement(String refEnregistrement) {
-		this.refEnregistrement = refEnregistrement;
+	public void setRefEnregistrementActivite(String refEnregistrementActivite) {
+		this.refEnregistrementActivite = refEnregistrementActivite;
 	}
 
 	public String getCodeBuGl() {
@@ -66,20 +54,20 @@ public class Activite {
 		this.typeCompteOperation = typeCompteOperation;
 	}
 
-	public String getChamps1() {
-		return champs1;
+	public String getChamp1Activite() {
+		return champ1Activite;
 	}
 
-	public void setChamps1(String champs1) {
-		this.champs1 = champs1;
+	public void setChamp1Activite(String champ1Activite) {
+		this.champ1Activite = champ1Activite;
 	}
 
-	public String getChamps2() {
-		return champs2;
+	public String getChamp2Activite() {
+		return champ2Activite;
 	}
 
-	public void setChamps2(String champs2) {
-		this.champs2 = champs2;
+	public void setChamp2Activite(String champ2Activite) {
+		this.champ2Activite = champ2Activite;
 	}
 
 }
