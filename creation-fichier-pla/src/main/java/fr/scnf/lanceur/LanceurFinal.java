@@ -38,13 +38,13 @@ public class LanceurFinal {
 		// chargement fichier de lecture cvs
 		// read it from the classpath : src/main/resources
 		BeanReader readerBanniere = factory.createReader("banniereEntrant",
-				new File("src/main/resources/input/data-banniere.csv"));
+				new File("src/main/resources/input/data-banniere1.csv"));
 
 		BeanReader readerBeneficiaire = factory.createReader("donneEntrant",
-				new File("src/main/resources/input/data-milieu.csv"));
+				new File("src/main/resources/input/data-milieu1.csv"));
 
 		BeanReader readerArticleFin = factory.createReader("articleFinEntrant",
-				new File("src/main/resources/input/data-articleFin.csv"));
+				new File("src/main/resources/input/data-articleFin1.csv"));
 
 		Object record = null;
 		List<DonneEntrant> donneEntrants = new ArrayList<>();
@@ -66,11 +66,12 @@ public class LanceurFinal {
 		}
 
 		for (Banniere banniere : bannieres) {
-			new LanceurFinal().ContruireRepertoire("src/main/resources/" + banniere.getEntite());
+			new LanceurFinal().ContruireRepertoire("src/main/resources/FLUX/" + banniere.getEntite());
 			BeanWriter out = factory.createWriter("BanniereSendFile", new File(
-					"src/main/resources/" + banniere.getEntite() + "/output" + banniere.getIdentifiant() + ".txt"));
+					"src/main/resources/FLUX/" + banniere.getEntite() + "/" + banniere.getIdentifiant() + "_20191114" + ".txt"));
 
 			out.write(banniere);
+			
 			for (DonneEntrant donneEntrant : donneEntrants) {
 
 				if (banniere.getIdentifiant().equals(donneEntrant.getIdentifiant())) {

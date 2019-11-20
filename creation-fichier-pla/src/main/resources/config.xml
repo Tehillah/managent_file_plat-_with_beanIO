@@ -36,9 +36,9 @@
 			<field name="identifiant" type="string" minOccurs="0" />
 			<field name="nombreTotalReglement" type="string" minOccurs="0" />
 			<field name="montantTotalReglement" type="string" minOccurs="0" />
-
 		</record>
 	</stream>
+	
 	<stream name="donneEntrant" format="csv">
 		<parser>
 			<property name="delimiter" value="," />

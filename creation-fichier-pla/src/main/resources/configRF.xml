@@ -1,0 +1,243 @@
+<beanio xmlns="http://www.beanio.org/2012/03"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.beanio.org/2012/03 http://www.beanio.org/2012/03/mapping.xsd">
+
+	<stream name="banniereRF" format="csv">
+		<parser>
+			<property name="delimiter" value="," />
+			<property name="lineSeparator" value="\n" />
+			<property name="whitespaceAllowed" value="true" />
+		</parser>
+	
+		<!-- Detail records are bound to fr.sncf.model.BanniereRF -->
+		
+		<record name="banniereRF" class="fr.scnf.model.BanniereRF">
+			<field name="entite" type="string" minOccurs="0" />
+			<field name="identifiant" type="string" minOccurs="0" />
+			<field name="identifiantRF" type="string" minOccurs="0" />
+			<field name="periodicite" type="string" minOccurs="0" />
+			<field name="dateTransmission" type="string" minOccurs="0" />
+			<field name="dateEmission" type="string" minOccurs="0" />
+			<field name="numeroEmission" type="string" minOccurs="0" />
+			<field name="nombreEnregistrements" type="string" minOccurs="0" />
+			<field name="cleControle" type="string" minOccurs="0" />
+			<field name="numeroSequence" type="string" minOccurs="0" />
+			<field name="libre" type="string" minOccurs="0" />
+			<field name="cleBan" type="string" minOccurs="0" />
+			<field name="filler" type="string" minOccurs="0" />
+		</record>
+	</stream>
+	
+	<stream name="articleDetailRF" format="csv">
+		<parser>
+			<property name="delimiter" value="," />
+			<property name="lineSeparator" value="\n" />
+			<property name="whitespaceAllowed" value="true" />
+		</parser>
+	
+		<!-- Detail records are bound to fr.sncf.model.ArticleDetailRF -->
+		
+		<record name="articleDetailRF" class="fr.scnf.model.ArticleDetailRF">
+			<field name="identifiant" type="string" minOccurs="0" />
+			<field name="refEnregistrementReglement" type="string" minOccurs="0" />
+			<field name="referenceReglement" type="string" minOccurs="0" />
+			<field name="refPaiementExterne" type="string" minOccurs="0" />
+			<field name="modePaiement" type="string" minOccurs="0" />
+			<field name="montantReglementEuro" type="string" minOccurs="0" />
+			<field name="codeDeviseReglement" type="string" minOccurs="0" />
+			<field name="montantReglementDevise" type="string" minOccurs="0" />
+			<field name="qualifiantDevise" type="string" minOccurs="0" />
+			<field name="dateEmissionCheque" type="string" minOccurs="0" />
+			<field name="dateEcheance" type="string" minOccurs="0" />
+			<field name="businessUnit" type="string" minOccurs="0" />
+			<field name="cleLettrage" type="string" minOccurs="0" />
+			<field name="codeBUGL" type="string" minOccurs="0" />
+			<field name="codeDivision" type="string" minOccurs="0" />
+			<field name="typeCompteOperation" type="string" minOccurs="0" />
+			
+			<field name="refEnregistrementBeneficiaire" type="string" minOccurs="0" />
+			<field name="codeBeneficiaireSIC" type="string" minOccurs="0" />
+			<field name="codeBeneficiairePS" type="string" minOccurs="0" />
+			<field name="nomBeneficiaire" type="string" minOccurs="0" />
+			<field name="siretBeneficiaire" type="string" minOccurs="0" />
+			<field name="adresseBeneficiaire" type="string" minOccurs="0" />
+			<field name="bureauDistributeurBeneficiaire" type="string" minOccurs="0" />
+			<field name="codePostalBeneficiaire" type="string" minOccurs="0" />
+			<field name="codePaysBeneficiaire" type="string" minOccurs="0" />
+			<field name="libellePaysBeneficiaire" type="string" minOccurs="0" />
+			<field name="libelleBanqueBeneficiaire" type="string" minOccurs="0" />
+			<field name="identifiantNumeroCompte" type="string" minOccurs="0" />
+			<field name="qualifiantStructureCompte" type="string" minOccurs="0" />
+			<field name="codeBicSWIFT" type="string" minOccurs="0" />
+			
+			<field name="refEnregistrementFournisseurOrigine" type="string" minOccurs="0" />
+			<field name="codeFournisseurOrigineSIC" type="string" minOccurs="0" />
+			<field name="codeFournisseurOriginePS" type="string" minOccurs="0" />
+			<field name="nomFournisseurOrigine" type="string" minOccurs="0" />
+			<field name="adresseFournisseurOrigine" type="string" minOccurs="0" />
+			<field name="bureauDistributeurFournisseurOrigine" type="string" minOccurs="0" />
+			<field name="codePostalFournisseurOrigine" type="string" minOccurs="0" />
+			<field name="codePaysFournisseurOrigine" type="string" minOccurs="0" />
+			<field name="libellePaysFournisseurOrigine" type="string" minOccurs="0" />
+			
+			<field name="refEnregistrementInfoComplRegltEtranger" type="string" minOccurs="0" />
+			<field name="filler" type="string" minOccurs="0" />
+			<field name="adresseBanqueEtrangere" type="string" minOccurs="0" />
+			<field name="bureauDistributeurBanqueEtrangere" type="string" minOccurs="0" />
+			<field name="codePostalBanqueEtrangere" type="string" minOccurs="0" />
+			<field name="codePaysBanqueEtrangere" type="string" minOccurs="0" />
+			<field name="libellePaysBanqueEtrangere" type="string" minOccurs="0" />
+			<field name="codeEconomiqueBalancePaiement" type="string" minOccurs="0" />
+			
+			<field name="refEnregistrementFacture" type="string" minOccurs="0" />
+			<field name="numeroCommande" type="string" minOccurs="0" />
+			<field name="numeroFactureFournisseur" type="string" minOccurs="0" />
+			<field name="codeTypeReglementFacture" type="string" minOccurs="0" />
+			<field name="dateFacture" type="string" minOccurs="0" />
+			<field name="montantFactureEuro" type="string" minOccurs="0" />
+			
+			<field name="refEnregistrementDeduction" type="string" minOccurs="0" />
+			<field name="numeroDeductionFournisseur" type="string" minOccurs="0" />
+			<field name="codeTypeReglementDeduction" type="string" minOccurs="0" />
+			<field name="dateDeduction" type="string" minOccurs="0" />
+			<field name="montantDeductionEuro" type="string" minOccurs="0" />
+		</record>
+	</stream>
+
+	<stream name="articleFinRF" format="csv">
+		<parser>
+			<property name="delimiter" value="," />
+			<property name="lineSeparator" value="\n" />
+			<property name="whitespaceAllowed" value="true" />
+		</parser>
+	
+		<!-- Detail records are bound to fr.sncf.model.ArticleFinRF -->
+		
+		<record name="articleFinRF" class="fr.scnf.model.ArticleFinRF">
+			<field name="identifiant" type="string" minOccurs="0" />
+			<field name="refEnregistrementArticleFin" type="string" minOccurs="0" />
+			<field name="identifiantRF" type="string" minOccurs="0" />
+			<field name="nombreReglements" type="string" minOccurs="0" />
+			<field name="sommeReglements" type="string" minOccurs="0" />
+		</record>
+	</stream>
+	
+	
+	<stream name="BanniereSendFile" format="fixedlength">
+	
+		<!-- Detail records are bound to fr.sncf.model.BanniereRF -->
+	
+		<record name="BanniereBean" class="fr.scnf.model.BanniereRF">
+			<field name="identifiantRF" length="15" type="string" />
+			<field name="periodicite" length="1" type="string" />
+			<field name="dateTransmission" length="8" type="string" />
+			<field name="dateEmission" length="8" type="string" />
+			<field name="numeroEmission" length="6" type="string" />
+			<field name="nombreEnregistrements" length="7" type="string" />
+			<field name="cleControle" length="2" type="string" />
+			<field name="numeroSequence" length="6" type="string" />
+			<field name="libre" length="45" type="string" />
+			<field name="cleBan" length="2" type="string" />
+			<field name="filler" length="27" type="string" />
+		</record>
+		
+		
+		<!-- Detail records are bound to fr.sncf.model.ReglementRF -->
+		
+		<record name="reglementRF" class="fr.scnf.model.ReglementRF" >
+			<field name="refEnregistrementReglement" length="3" type="string" />
+			<field name="referenceReglement" length="10" type="string" />
+			<field name="refPaiementExterne" length="7" type="string" />
+			<field name="modePaiement" length="3" type="string" />
+			<field name="montantReglementEuro" length="14" type="string" />
+			<field name="codeDeviseReglement" length="3" type="string" />
+			<field name="montantReglementDevise" length="15" type="string" />
+			<field name="qualifiantDevise" length="1" type="string" />
+			<field name="dateEmissionCheque" length="10" type="string" />
+			<field name="dateEcheance" length="10" type="string" />
+			<field name="businessUnit" length="5" type="string" />
+			<field name="cleLettrage" length="15" type="string" />
+			<field name="codeBUGL" length="5" type="string" />
+			<field name="codeDivision" length="5" type="string" />
+			<field name="typeCompteOperation" length="3" type="string" />
+		</record>
+		
+		<!-- Detail records are bound to fr.sncf.model.BeneficiaireRF -->
+		
+		<record name="beneficiaireRF" class="fr.scnf.model.BeneficiaireRF" >
+			<field name="refEnregistrementBeneficiaire" length="3" type="string" />
+			<field name="codeBeneficiaireSIC" length="6" type="string" />
+			<field name="codeBeneficiairePS" length="10" type="string" />
+			<field name="nomBeneficiaire" length="40" type="string" />
+			<field name="siretBeneficiaire" length="14" type="string" />
+			<field name="adresseBeneficiaire" length="32" type="string" />
+			<field name="bureauDistributeurBeneficiaire" length="26" type="string" />
+			<field name="codePostalBeneficiaire" length="12" type="string" />
+			<field name="codePaysBeneficiaire" length="3" type="string" />
+			<field name="libellePaysBeneficiaire" length="30" type="string" />
+			<field name="libelleBanqueBeneficiaire" length="30" type="string" />
+			<field name="identifiantNumeroCompte" length="34" type="string" />
+			<field name="qualifiantStructureCompte" length="1" type="string" />
+			<field name="codeBicSWIFT" length="11" type="string" />			
+		</record>
+		
+		<!-- Detail records are bound to fr.sncf.model.FournisseurOrigineRF -->
+		
+		<record name="fournisseurOrigineRF" class="fr.scnf.model.FournisseurOrigineRF" >
+			<field name="refEnregistrementFournisseurOrigine" length="3" type="string" />	
+			<field name="codeFournisseurOrigineSIC" length="6" type="string" />
+			<field name="codeFournisseurOriginePS" length="10" type="string" />
+			<field name="nomFournisseurOrigine" length="40" type="string" />
+			<field name="adresseFournisseurOrigine" length="32" type="string" />
+			<field name="bureauDistributeurFournisseurOrigine" length="26" type="string" />
+			<field name="codePostalFournisseurOrigine" length="12" type="string" />
+			<field name="codePaysFournisseurOrigine" length="3" type="string" />
+			<field name="libellePaysFournisseurOrigine" length="30" type="string" />	
+		</record>
+		
+		<!-- Detail records are bound to fr.sncf.model.InfoComplRgltEtrangerRF -->
+		
+		<record name="infoComplRgltEtrangerRF" class="fr.scnf.model.InfoComplRgltEtrangerRF" >
+			<field name="refEnregistrementInfoComplRegltEtranger" length="3" type="string" />	
+			<field name="filler" length="11" type="string" />
+			<field name="adresseBanqueEtrangere" length="35" type="string" />
+			<field name="bureauDistributeurBanqueEtrangere" length="30" type="string" />
+			<field name="codePostalBanqueEtrangere" length="12" type="string" />
+			<field name="codePaysBanqueEtrangere" length="3" type="string" />
+			<field name="libellePaysBanqueEtrangere" length="30" type="string" />
+			<field name="codeEconomiqueBalancePaiement" length="6" type="string" />	
+		</record>
+		
+		<!-- Detail records are bound to fr.sncf.model.FactureRF -->
+		
+		<record name="factureRF" class="fr.scnf.model.FactureRF" >
+			<field name="refEnregistrementFacture" length="3" type="string" />	
+			<field name="numeroCommande" length="15" type="string" />
+			<field name="numeroFactureFournisseur" length="15" type="string" />
+			<field name="codeTypeReglementFacture" length="1" type="string" />
+			<field name="dateFacture" length="10" type="string" />
+			<field name="montantFactureEuro" length="14" type="string" />
+		</record>
+				
+		<!-- Detail records are bound to fr.sncf.model.DeductionRF -->
+		
+		<record name="deductionRF" class="fr.scnf.model.DeductionRF" >
+			<field name="refEnregistrementDeduction" length="3" type="string" />
+			<field name="numeroDeductionFournisseur" length="15" type="string" />
+			<field name="codeTypeReglementDeduction" length="1" type="string" />
+			<field name="dateDeduction" length="10" type="string" />
+			<field name="montantDeductionEuro" length="14" type="string" />
+		</record>
+								
+		<!-- Detail records are bound to fr.sncf.model.ArticleFinRF -->
+		
+		<record name="articleFinRF" class="fr.scnf.model.ArticleFinRF" >
+			<field name="refEnregistrementArticleFin" length="3" type="string" />
+			<field name="identifiantRF" length="15" type="string" />
+			<field name="nombreReglements" length="10" type="string" />
+			<field name="sommeReglements" length="14" type="string" />			
+		</record>
+		
+	</stream>
+	
+</beanio>
