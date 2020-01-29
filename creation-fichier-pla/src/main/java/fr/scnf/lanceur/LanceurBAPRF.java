@@ -66,7 +66,7 @@ public class LanceurBAPRF {
 		
 		for (BanniereBAPRF banniereBAPRF : banniereBAPRFs) {
 			new LanceurBAPRF().ConstruireRepertoire("src/main/resources/BAPRF/" +banniereBAPRF.getEntite()+"-BAPRF");
-			BeanWriter out = factory.createWriter("BanniereSendFile", new File("src/main/resources/BAPRF/" + banniereBAPRF.getEntite()+"-BAPRF" + "/" + banniereBAPRF.getIdentifiant() + "_20191114" + ".txt"));
+			BeanWriter out = factory.createWriter("BanniereSendFile", new File("src/main/resources/BAPRF/" + banniereBAPRF.getEntite()+"-BAPRF" + "/" + banniereBAPRF.getIdentifiant() + "_20191203" + ".txt"));
 			out.write(banniereBAPRF);
 			
 			

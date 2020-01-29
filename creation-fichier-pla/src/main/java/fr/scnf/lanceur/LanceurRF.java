@@ -68,7 +68,7 @@ public class LanceurRF {
 		
 		for (BanniereRF banniereRF : banniereRFs) {
 			new LanceurRF().ConstruireRepertoire("src/main/resources/RF/" +banniereRF.getEntite()+"-RF");
-			BeanWriter out = factory.createWriter("BanniereSendFile", new File("src/main/resources/RF/" + banniereRF.getEntite()+"-RF" + "/" + banniereRF.getIdentifiant() + "_20191114" + ".txt"));
+			BeanWriter out = factory.createWriter("BanniereSendFile", new File("src/main/resources/RF/" + banniereRF.getEntite()+"-RF" + "/" + banniereRF.getIdentifiant() + "_20191203" + ".txt"));
 			out.write(banniereRF);
 			
 			for (ArticleDetailRF articleDetailRF : articleDetailRFs) {

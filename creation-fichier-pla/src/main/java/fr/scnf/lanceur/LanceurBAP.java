@@ -59,7 +59,7 @@ public class LanceurBAP {
 		
 		for (BanniereBAP banniereBAP : banniereBAPs) {
 			new LanceurBAP().ConstruireRepertoire("src/main/resources/BAP/" +banniereBAP.getEntite()+"-BAP");
-			BeanWriter out = factory.createWriter("BanniereSendFile", new File("src/main/resources/BAP/" + banniereBAP.getEntite()+"-BAP" + "/" + banniereBAP.getIdentifiant() + "_20191114" + ".txt"));
+			BeanWriter out = factory.createWriter("BanniereSendFile", new File("src/main/resources/BAP/" + banniereBAP.getEntite()+"-BAP" + "/" + banniereBAP.getIdentifiant() + "_20191203" + ".txt"));
 			out.write(banniereBAP);
 			
 			for (ArticleDetail articleDetail : articleDetails) {

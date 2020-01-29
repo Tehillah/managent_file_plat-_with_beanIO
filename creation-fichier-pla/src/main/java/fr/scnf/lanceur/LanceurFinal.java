@@ -68,7 +68,7 @@ public class LanceurFinal {
 		for (Banniere banniere : bannieres) {
 			new LanceurFinal().ContruireRepertoire("src/main/resources/FLUX/" + banniere.getEntite());
 			BeanWriter out = factory.createWriter("BanniereSendFile", new File(
-					"src/main/resources/FLUX/" + banniere.getEntite() + "/" + banniere.getIdentifiant() + "_20191114" + ".txt"));
+					"src/main/resources/FLUX/" + banniere.getEntite() + "/" + banniere.getIdentifiant() + "_20191203" + ".txt"));
 
 			out.write(banniere);
 			
