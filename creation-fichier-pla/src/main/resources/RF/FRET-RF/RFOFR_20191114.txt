@@ -1,0 +1,302 @@
+FRPRGF_VRTCHQ__J20191114201911140000010000302CC000001                                             $$                           
+01007027784220089822VEF00000000180000EUR                          2019-10-284344000001EFT00898221340102141EXP
+0205321880000111196CRE  RFOHO DDR 1                        50401966200049112 RUE REAUMUR                 PARIS                     75002       FR France                        SOCIETE GENERALE              FR7630003034220002006556967       1SOGEFRPP   
+030                                                                                                                                                               
+040           3-5 YARDLEY ROAD                   LIVERPOOL                     L337SS      GB Royaume Uni                   123456
+050               730            I2019-10-2800000000102660
+060192500343      C2019-10-2800000000040080
+01013890287290035293VEF00000000020000EUR                          2019-10-282372100057EFT01577491340102142EXP
+020      0000010008CRE  RFOHO DDR 2                        50401966200049112 RUE REAUMUR                 PARIS                     75002       FR France                        CAISSE D'EPARGNE              FR7613335003010817863067770       1CEPAFRPP333
+030                                                                                                                                                               
+040           POSTFACH                           ZURICH                        8098        CH Switzerland                         
+050               0079082667     I2019-10-2800000000007428
+060192500344      C2019-10-2800000000013320
+01013895267160032814VEF00000000180000EUR                          2019-10-284344000001EFT00898221340102143EXP
+0205321880000086586CRE  RFOHO DDR ERREYR FACTURE           50401966200049112 RUE REAUMUR                 PARIS                     75002       FR France                        BNP PARIBAS                   FR7630004024140001056360968       1BNPAFRPPXXX
+030                                                                                                                                                               
+040           COMMERZBANK AG                     SAARBRUCKEN                   66111       DE Germany                             
+050               455450987      I2019-10-2800000000156768
+060192500586      C2019-10-2800000000167407
+01007027784220024723VEF00000000020000EUR                          2019-10-282372100057EFT01577491340102144EXP
+020      0000123805DIAC LOCATION                           3298923680002114 AVENUE DU PAVE NEUF          NOISY LE GRAND CEDEX      93168       FR France                        BANQUE POPULAIRE              FR7614707501807021733916762       1CCBPFRPPMTZ
+030                                                                                                                                                               
+040           24 AVENUE MARNIX                   BRUXELLES                     1000        BE Belgium                       123322
+050               192500468      I2019-10-2800000002565499
+060192500587      C2019-10-2800000000061103
+01013890287290089822VEF00000000180000EUR                          2019-10-284344000001EFT00898224344000661EXP
+0205321880000111196NATIXIS FACTOR                                        10 12 AV WINSTON CHURCHILL      CHARENTON LE PONT CEDEX   94676       FR France                        CREDIT MUTUEL                 FR7611899001240002631374502       1CMCIFR2A   
+030                                                                                                                                                               
+040           FRIEDRICH-WILHELM-PLATZ 1          BRAUNSCHWEIG                  38100       DE Germany                             
+050               400261708      I2019-10-2800000000102660
+060192500343      C2019-10-2800000000040080
+01013895267160035293VAE00000000020000EUR                          2019-10-282372100057EFT01577494344000662EXP
+020      0000010008ATOMS MONACO                                          7 RUE DE L INDUSTRIE            MONACO CEDEX              98013       MC Monaco                        CREDIT FONCIER                MC9512739000700070792000P59       1CFMOMCMXXXX
+030                                                                                                                                                               
+040           AVENUE PRINCESSE ALICE             MONACO                        98000       MC Monaco                        122000
+050               2019VF-5002461QI2019-10-2800000000007428
+060192500344      C2019-10-2800000000013320
+01007027784220032814VAE00000000180000EUR                          2019-10-284344000001EFT00898224344000663EXP
+0205321880000086586SNCB SA DE DROIT PUBLIC                               RUE DE FRANCE 58                BRUXELLES                 1060        BE Belgique                      BNP PARIBAS FORTIS            BE45210000013489                  1GEBABEBB   
+030                                                                                                                                                               
+040           3-5 YARDLEY ROAD                   LIVERPOOL                     L337SS      GB Royaume Uni                   123456
+050               730            I2019-10-2800000000156768
+060192500586      C2019-10-2800000000167407
+01013890287290024723VEF00000000020000EUR                          2019-10-282372100057EFT01577494344000664EXP
+020      0000123805CRE  RFOHO DDR 1                        50401966200049112 RUE REAUMUR                 PARIS                     75002       FR France                        SOCIETE GENERALE              FR7630003034220002006556967       1SOGEFRPP   
+030                                                                                                                                                               
+040           POSTFACH                           ZURICH                        8098        CH Switzerland                         
+050               0079082667     I2019-10-2800000002565499
+060192500587      C2019-10-2800000000061103
+01013895267160089822VEF00000000180000EUR                          2019-10-284344000001EFT00898224344001512EXP
+0205321880000111196CRE  RFOHO DDR 2                        50401966200049112 RUE REAUMUR                 PARIS                     75002       FR France                        CAISSE D'EPARGNE              FR7613335003010817863067770       1CEPAFRPP333
+030                                                                                                                                                               
+040           COMMERZBANK AG                     SAARBRUCKEN                   66111       DE Germany                             
+050               455450987      I2019-10-2800000000102660
+060192500343      C2019-10-2800000000040080
+01007027784220035293VEF00000000020000EUR                          2019-10-282372100057EFT01577494344018986EXP
+020      0000010008CRE  RFOHO DDR ERREYR FACTURE           50401966200049112 RUE REAUMUR                 PARIS                     75002       FR France                        BNP PARIBAS                   FR7630004024140001056360968       1BNPAFRPPXXX
+030                                                                                                                                                               
+040           25 AVENUE MARNIX                   BRUXELLES                     1000        BE Belgium                       123322
+050               192500468      I2019-10-2800000000007428
+060192500344      C2019-10-2800000000013320
+01007027784220089822VEF00000000180000EUR                          2019-10-284344000001EFT00898224344054195EXP
+0205321880000111196CRE  RFOHO DDR 1                        50401966200049112 RUE REAUMUR                 PARIS                     75002       FR France                        SOCIETE GENERALE              FR7630003034220002006556967       1SOGEFRPP   
+030                                                                                                                                                               
+040           3-5 YARDLEY ROAD                   LIVERPOOL                     L337SS      GB Royaume Uni                   123456
+050               730            I2019-10-2800000000102660
+060192500343      C2019-10-2800000000040080
+01013890287290035293VEF00000000020000EUR                          2019-10-282372100057EFT01577494344061759EXP
+020      0000010008CRE  RFOHO DDR 2                        50401966200049112 RUE REAUMUR                 PARIS                     75002       FR France                        CAISSE D'EPARGNE              FR7613335003010817863067770       1CEPAFRPP333
+030                                                                                                                                                               
+040           POSTFACH                           ZURICH                        8098        CH Switzerland                         
+050               0079082667     I2019-10-2800000000007428
+060192500344      C2019-10-2800000000013320
+01013895267160032814VEF00000000180000EUR                          2019-10-284344000001EFT00898224344000054EXP
+0205321880000086586CRE  RFOHO DDR ERREYR FACTURE           50401966200049112 RUE REAUMUR                 PARIS                     75002       FR France                        BNP PARIBAS                   FR7630004024140001056360968       1BNPAFRPPXXX
+030                                                                                                                                                               
+040           COMMERZBANK AG                     SAARBRUCKEN                   66111       DE Germany                             
+050               455450987      I2019-10-2800000000156768
+060192500586      C2019-10-2800000000167407
+01007027784220024723VEF00000000020000EUR                          2019-10-282372100057EFT01577491340102141EXP
+020      0000123805DIAC LOCATION                           3298923680002114 AVENUE DU PAVE NEUF          NOISY LE GRAND CEDEX      93168       FR France                        BANQUE POPULAIRE              FR7614707501807021733916762       1CCBPFRPPMTZ
+030                                                                                                                                                               
+040           24 AVENUE MARNIX                   BRUXELLES                     1000        BE Belgium                       123322
+050               192500468      I2019-10-2800000002565499
+060192500587      C2019-10-2800000000061103
+01013890287290089822VEF00000000180000EUR                          2019-10-284344000001EFT00898221340102142EXP
+0205321880000111196NATIXIS FACTOR                                        10 12 AV WINSTON CHURCHILL      CHARENTON LE PONT CEDEX   94676       FR France                        CREDIT MUTUEL                 FR7611899001240002631374502       1CMCIFR2A   
+030                                                                                                                                                               
+040           FRIEDRICH-WILHELM-PLATZ 1          BRAUNSCHWEIG                  38100       DE Germany                             
+050               400261708      I2019-10-2800000000102660
+060192500343      C2019-10-2800000000040080
+01013895267160035293VAE00000000020000EUR                          2019-10-282372100057EFT01577491340102143EXP
+020      0000010008ATOMS MONACO                                          7 RUE DE L INDUSTRIE            MONACO CEDEX              98013       MC Monaco                        CREDIT FONCIER                MC9512739000700070792000P59       1CFMOMCMXXXX
+030                                                                                                                                                               
+040           AVENUE PRINCESSE ALICE             MONACO                        98000       MC Monaco                        122000
+050               2019VF-5002461QI2019-10-2800000000007428
+060192500344      C2019-10-2800000000013320
+01007027784220032814VAE00000000180000EUR                          2019-10-284344000001EFT00898221340102144EXP
+0205321880000086586SNCB SA DE DROIT PUBLIC                               RUE DE FRANCE 58                BRUXELLES                 1060        BE Belgique                      BNP PARIBAS FORTIS            BE45210000013489                  1GEBABEBB   
+030                                                                                                                                                               
+040           3-5 YARDLEY ROAD                   LIVERPOOL                     L337SS      GB Royaume Uni                   123456
+050               730            I2019-10-2800000000156768
+060192500586      C2019-10-2800000000167407
+01013890287290024723VEF00000000020000EUR                          2019-10-282372100057EFT01577494344000661EXP
+020      0000123805CRE  RFOHO DDR 1                        50401966200049112 RUE REAUMUR                 PARIS                     75002       FR France                        SOCIETE GENERALE              FR7630003034220002006556967       1SOGEFRPP   
+030                                                                                                                                                               
+040           POSTFACH                           ZURICH                        8098        CH Switzerland                         
+050               0079082667     I2019-10-2800000002565499
+060192500587      C2019-10-2800000000061103
+01013895267160089822VEF00000000180000EUR                          2019-10-284344000001EFT00898224344000662EXP
+0205321880000111196CRE  RFOHO DDR 2                        50401966200049112 RUE REAUMUR                 PARIS                     75002       FR France                        CAISSE D'EPARGNE              FR7613335003010817863067770       1CEPAFRPP333
+030                                                                                                                                                               
+040           COMMERZBANK AG                     SAARBRUCKEN                   66111       DE Germany                             
+050               455450987      I2019-10-2800000000102660
+060192500343      C2019-10-2800000000040080
+01007027784220035293VEF00000000020000EUR                          2019-10-282372100057EFT01577494344000663EXP
+020      0000010008CRE  RFOHO DDR ERREYR FACTURE           50401966200049112 RUE REAUMUR                 PARIS                     75002       FR France                        BNP PARIBAS                   FR7630004024140001056360968       1BNPAFRPPXXX
+030                                                                                                                                                               
+040           25 AVENUE MARNIX                   BRUXELLES                     1000        BE Belgium                       123322
+050               192500468      I2019-10-2800000000007428
+060192500344      C2019-10-2800000000013320
+01007027784220089822VEF00000000180000EUR                          2019-10-284344000001EFT00898224344000664EXP
+0205321880000111196CRE  RFOHO DDR 1                        50401966200049112 RUE REAUMUR                 PARIS                     75002       FR France                        SOCIETE GENERALE              FR7630003034220002006556967       1SOGEFRPP   
+030                                                                                                                                                               
+040           3-5 YARDLEY ROAD                   LIVERPOOL                     L337SS      GB Royaume Uni                   123456
+050               730            I2019-10-2800000000102660
+060192500343      C2019-10-2800000000040080
+01013890287290035293VEF00000000020000EUR                          2019-10-282372100057EFT01577494344001512EXP
+020      0000010008CRE  RFOHO DDR 2                        50401966200049112 RUE REAUMUR                 PARIS                     75002       FR France                        CAISSE D'EPARGNE              FR7613335003010817863067770       1CEPAFRPP333
+030                                                                                                                                                               
+040           POSTFACH                           ZURICH                        8098        CH Switzerland                         
+050               0079082667     I2019-10-2800000000007428
+060192500344      C2019-10-2800000000013320
+01013895267160032814VEF00000000180000EUR                          2019-10-284344000001EFT00898224344018986EXP
+0205321880000086586CRE  RFOHO DDR ERREYR FACTURE           50401966200049112 RUE REAUMUR                 PARIS                     75002       FR France                        BNP PARIBAS                   FR7630004024140001056360968       1BNPAFRPPXXX
+030                                                                                                                                                               
+040           COMMERZBANK AG                     SAARBRUCKEN                   66111       DE Germany                             
+050               455450987      I2019-10-2800000000156768
+060192500586      C2019-10-2800000000167407
+01007027784220024723VEF00000000020000EUR                          2019-10-282372100057EFT01577494344054195EXP
+020      0000123805DIAC LOCATION                           3298923680002114 AVENUE DU PAVE NEUF          NOISY LE GRAND CEDEX      93168       FR France                        BANQUE POPULAIRE              FR7614707501807021733916762       1CCBPFRPPMTZ
+030                                                                                                                                                               
+040           24 AVENUE MARNIX                   BRUXELLES                     1000        BE Belgium                       123322
+050               192500468      I2019-10-2800000002565499
+060192500587      C2019-10-2800000000061103
+01013890287290089822VEF00000000180000EUR                          2019-10-284344000001EFT00898224344061759EXP
+0205321880000111196NATIXIS FACTOR                                        10 12 AV WINSTON CHURCHILL      CHARENTON LE PONT CEDEX   94676       FR France                        CREDIT MUTUEL                 FR7611899001240002631374502       1CMCIFR2A   
+030                                                                                                                                                               
+040           FRIEDRICH-WILHELM-PLATZ 1          BRAUNSCHWEIG                  38100       DE Germany                             
+050               400261708      I2019-10-2800000000102660
+060192500343      C2019-10-2800000000040080
+01013895267160035293VAE00000000020000EUR                          2019-10-282372100057EFT01577494344000054EXP
+020      0000010008ATOMS MONACO                                          7 RUE DE L INDUSTRIE            MONACO CEDEX              98013       MC Monaco                        CREDIT FONCIER                MC9512739000700070792000P59       1CFMOMCMXXXX
+030                                                                                                                                                               
+040           AVENUE PRINCESSE ALICE             MONACO                        98000       MC Monaco                        122000
+050               2019VF-5002461QI2019-10-2800000000007428
+060192500344      C2019-10-2800000000013320
+01007027784220032814VAE00000000180000EUR                          2019-10-284344000001EFT00898221340102141EXP
+0205321880000086586SNCB SA DE DROIT PUBLIC                               RUE DE FRANCE 58                BRUXELLES                 1060        BE Belgique                      BNP PARIBAS FORTIS            BE45210000013489                  1GEBABEBB   
+030                                                                                                                                                               
+040           3-5 YARDLEY ROAD                   LIVERPOOL                     L337SS      GB Royaume Uni                   123456
+050               730            I2019-10-2800000000156768
+060192500586      C2019-10-2800000000167407
+01013890287290024723VEF00000000020000EUR                          2019-10-282372100057EFT01577491340102142EXP
+020      0000123805CRE  RFOHO DDR 1                        50401966200049112 RUE REAUMUR                 PARIS                     75002       FR France                        SOCIETE GENERALE              FR7630003034220002006556967       1SOGEFRPP   
+030                                                                                                                                                               
+040           POSTFACH                           ZURICH                        8098        CH Switzerland                         
+050               0079082667     I2019-10-2800000002565499
+060192500587      C2019-10-2800000000061103
+01013895267160089822VEF00000000180000EUR                          2019-10-284344000001EFT00898221340102143EXP
+0205321880000111196CRE  RFOHO DDR 2                        50401966200049112 RUE REAUMUR                 PARIS                     75002       FR France                        CAISSE D'EPARGNE              FR7613335003010817863067770       1CEPAFRPP333
+030                                                                                                                                                               
+040           COMMERZBANK AG                     SAARBRUCKEN                   66111       DE Germany                             
+050               455450987      I2019-10-2800000000102660
+060192500343      C2019-10-2800000000040080
+01007027784220035293VEF00000000020000EUR                          2019-10-282372100057EFT01577491340102144EXP
+020      0000010008CRE  RFOHO DDR ERREYR FACTURE           50401966200049112 RUE REAUMUR                 PARIS                     75002       FR France                        BNP PARIBAS                   FR7630004024140001056360968       1BNPAFRPPXXX
+030                                                                                                                                                               
+040           25 AVENUE MARNIX                   BRUXELLES                     1000        BE Belgium                       123322
+050               192500468      I2019-10-2800000000007428
+060192500344      C2019-10-2800000000013320
+01007027784220089822VEF00000000180000EUR                          2019-10-284344000001EFT00898224344000661EXP
+0205321880000111196CRE  RFOHO DDR 1                        50401966200049112 RUE REAUMUR                 PARIS                     75002       FR France                        SOCIETE GENERALE              FR7630003034220002006556967       1SOGEFRPP   
+030                                                                                                                                                               
+040           3-5 YARDLEY ROAD                   LIVERPOOL                     L337SS      GB Royaume Uni                   123456
+050               730            I2019-10-2800000000102660
+060192500343      C2019-10-2800000000040080
+01013890287290035293VEF00000000020000EUR                          2019-10-282372100057EFT01577494344000662EXP
+020      0000010008CRE  RFOHO DDR 2                        50401966200049112 RUE REAUMUR                 PARIS                     75002       FR France                        CAISSE D'EPARGNE              FR7613335003010817863067770       1CEPAFRPP333
+030                                                                                                                                                               
+040           POSTFACH                           ZURICH                        8098        CH Switzerland                         
+050               0079082667     I2019-10-2800000000007428
+060192500344      C2019-10-2800000000013320
+01013895267160032814VEF00000000180000EUR                          2019-10-284344000001EFT00898224344000663EXP
+0205321880000086586CRE  RFOHO DDR ERREYR FACTURE           50401966200049112 RUE REAUMUR                 PARIS                     75002       FR France                        BNP PARIBAS                   FR7630004024140001056360968       1BNPAFRPPXXX
+030                                                                                                                                                               
+040           COMMERZBANK AG                     SAARBRUCKEN                   66111       DE Germany                             
+050               455450987      I2019-10-2800000000156768
+060192500586      C2019-10-2800000000167407
+01007027784220024723VEF00000000020000EUR                          2019-10-282372100057EFT01577494344000664EXP
+020      0000123805DIAC LOCATION                           3298923680002114 AVENUE DU PAVE NEUF          NOISY LE GRAND CEDEX      93168       FR France                        BANQUE POPULAIRE              FR7614707501807021733916762       1CCBPFRPPMTZ
+030                                                                                                                                                               
+040           24 AVENUE MARNIX                   BRUXELLES                     1000        BE Belgium                       123322
+050               192500468      I2019-10-2800000002565499
+060192500587      C2019-10-2800000000061103
+01013890287290089822VEF00000000180000EUR                          2019-10-284344000001EFT00898224344001512EXP
+0205321880000111196NATIXIS FACTOR                                        10 12 AV WINSTON CHURCHILL      CHARENTON LE PONT CEDEX   94676       FR France                        CREDIT MUTUEL                 FR7611899001240002631374502       1CMCIFR2A   
+030                                                                                                                                                               
+040           FRIEDRICH-WILHELM-PLATZ 1          BRAUNSCHWEIG                  38100       DE Germany                             
+050               400261708      I2019-10-2800000000102660
+060192500343      C2019-10-2800000000040080
+01013895267160035293VAE00000000020000EUR                          2019-10-282372100057EFT01577494344018986EXP
+020      0000010008ATOMS MONACO                                          7 RUE DE L INDUSTRIE            MONACO CEDEX              98013       MC Monaco                        CREDIT FONCIER                MC9512739000700070792000P59       1CFMOMCMXXXX
+030                                                                                                                                                               
+040           AVENUE PRINCESSE ALICE             MONACO                        98000       MC Monaco                        122000
+050               2019VF-5002461QI2019-10-2800000000007428
+060192500344      C2019-10-2800000000013320
+01007027784220032814VAE00000000180000EUR                          2019-10-284344000001EFT00898224344054195EXP
+0205321880000086586SNCB SA DE DROIT PUBLIC                               RUE DE FRANCE 58                BRUXELLES                 1060        BE Belgique                      BNP PARIBAS FORTIS            BE45210000013489                  1GEBABEBB   
+030                                                                                                                                                               
+040           3-5 YARDLEY ROAD                   LIVERPOOL                     L337SS      GB Royaume Uni                   123456
+050               730            I2019-10-2800000000156768
+060192500586      C2019-10-2800000000167407
+01013890287290024723VEF00000000020000EUR                          2019-10-282372100057EFT01577494344061759EXP
+020      0000123805CRE  RFOHO DDR 1                        50401966200049112 RUE REAUMUR                 PARIS                     75002       FR France                        SOCIETE GENERALE              FR7630003034220002006556967       1SOGEFRPP   
+030                                                                                                                                                               
+040           POSTFACH                           ZURICH                        8098        CH Switzerland                         
+050               0079082667     I2019-10-2800000002565499
+060192500587      C2019-10-2800000000061103
+01013895267160089822VEF00000000180000EUR                          2019-10-284344000001EFT00898224344000054EXP
+0205321880000111196CRE  RFOHO DDR 2                        50401966200049112 RUE REAUMUR                 PARIS                     75002       FR France                        CAISSE D'EPARGNE              FR7613335003010817863067770       1CEPAFRPP333
+030                                                                                                                                                               
+040           COMMERZBANK AG                     SAARBRUCKEN                   66111       DE Germany                             
+050               455450987      I2019-10-2800000000102660
+060192500343      C2019-10-2800000000040080
+01007027784220035293VEF00000000020000EUR                          2019-10-282372100057EFT01577491340102141EXP
+020      0000010008CRE  RFOHO DDR ERREYR FACTURE           50401966200049112 RUE REAUMUR                 PARIS                     75002       FR France                        BNP PARIBAS                   FR7630004024140001056360968       1BNPAFRPPXXX
+030                                                                                                                                                               
+040           25 AVENUE MARNIX                   BRUXELLES                     1000        BE Belgium                       123322
+050               192500468      I2019-10-2800000000007428
+060192500344      C2019-10-2800000000013320
+01007027784220089822VEF00000000180000EUR                          2019-10-284344000001EFT00898221340102142EXP
+0205321880000111196CRE  RFOHO DDR 1                        50401966200049112 RUE REAUMUR                 PARIS                     75002       FR France                        SOCIETE GENERALE              FR7630003034220002006556967       1SOGEFRPP   
+030                                                                                                                                                               
+040           3-5 YARDLEY ROAD                   LIVERPOOL                     L337SS      GB Royaume Uni                   123456
+050               730            I2019-10-2800000000102660
+060192500343      C2019-10-2800000000040080
+01013890287290035293VEF00000000020000EUR                          2019-10-282372100057EFT01577491340102143EXP
+020      0000010008CRE  RFOHO DDR 2                        50401966200049112 RUE REAUMUR                 PARIS                     75002       FR France                        CAISSE D'EPARGNE              FR7613335003010817863067770       1CEPAFRPP333
+030                                                                                                                                                               
+040           POSTFACH                           ZURICH                        8098        CH Switzerland                         
+050               0079082667     I2019-10-2800000000007428
+060192500344      C2019-10-2800000000013320
+01013895267160032814VEF00000000180000EUR                          2019-10-284344000001EFT00898221340102144EXP
+0205321880000086586CRE  RFOHO DDR ERREYR FACTURE           50401966200049112 RUE REAUMUR                 PARIS                     75002       FR France                        BNP PARIBAS                   FR7630004024140001056360968       1BNPAFRPPXXX
+030                                                                                                                                                               
+040           COMMERZBANK AG                     SAARBRUCKEN                   66111       DE Germany                             
+050               455450987      I2019-10-2800000000156768
+060192500586      C2019-10-2800000000167407
+01007027784220024723VEF00000000020000EUR                          2019-10-282372100057EFT01577494344000661EXP
+020      0000123805DIAC LOCATION                           3298923680002114 AVENUE DU PAVE NEUF          NOISY LE GRAND CEDEX      93168       FR France                        BANQUE POPULAIRE              FR7614707501807021733916762       1CCBPFRPPMTZ
+030                                                                                                                                                               
+040           24 AVENUE MARNIX                   BRUXELLES                     1000        BE Belgium                       123322
+050               192500468      I2019-10-2800000002565499
+060192500587      C2019-10-2800000000061103
+01013890287290089822VEF00000000180000EUR                          2019-10-284344000001EFT00898224344000662EXP
+0205321880000111196NATIXIS FACTOR                                        10 12 AV WINSTON CHURCHILL      CHARENTON LE PONT CEDEX   94676       FR France                        CREDIT MUTUEL                 FR7611899001240002631374502       1CMCIFR2A   
+030                                                                                                                                                               
+040           FRIEDRICH-WILHELM-PLATZ 1          BRAUNSCHWEIG                  38100       DE Germany                             
+050               400261708      I2019-10-2800000000102660
+060192500343      C2019-10-2800000000040080
+01013895267160035293VAE00000000020000EUR                          2019-10-282372100057EFT01577494344000663EXP
+020      0000010008ATOMS MONACO                                          7 RUE DE L INDUSTRIE            MONACO CEDEX              98013       MC Monaco                        CREDIT FONCIER                MC9512739000700070792000P59       1CFMOMCMXXXX
+030                                                                                                                                                               
+040           AVENUE PRINCESSE ALICE             MONACO                        98000       MC Monaco                        122000
+050               2019VF-5002461QI2019-10-2800000000007428
+060192500344      C2019-10-2800000000013320
+01007027784220032814VAE00000000180000EUR                          2019-10-284344000001EFT00898224344000664EXP
+0205321880000086586SNCB SA DE DROIT PUBLIC                               RUE DE FRANCE 58                BRUXELLES                 1060        BE Belgique                      BNP PARIBAS FORTIS            BE45210000013489                  1GEBABEBB   
+030                                                                                                                                                               
+040           3-5 YARDLEY ROAD                   LIVERPOOL                     L337SS      GB Royaume Uni                   123456
+050               730            I2019-10-2800000000156768
+060192500586      C2019-10-2800000000167407
+01013890287290024723VEF00000000020000EUR                          2019-10-282372100057EFT01577494344001512EXP
+020      0000123805CRE  RFOHO DDR 1                        50401966200049112 RUE REAUMUR                 PARIS                     75002       FR France                        SOCIETE GENERALE              FR7630003034220002006556967       1SOGEFRPP   
+030                                                                                                                                                               
+040           POSTFACH                           ZURICH                        8098        CH Switzerland                         
+050               0079082667     I2019-10-2800000002565499
+060192500587      C2019-10-2800000000061103
+01013895267160089822VEF00000000180000EUR                          2019-10-284344000001EFT00898224344018986EXP
+0205321880000111196CRE  RFOHO DDR 2                        50401966200049112 RUE REAUMUR                 PARIS                     75002       FR France                        CAISSE D'EPARGNE              FR7613335003010817863067770       1CEPAFRPP333
+030                                                                                                                                                               
+040           COMMERZBANK AG                     SAARBRUCKEN                   66111       DE Germany                             
+050               455450987      I2019-10-2800000000102660
+060192500343      C2019-10-2800000000040080
+01007027784220035293VEF00000000020000EUR                          2019-10-282372100057EFT01577494344054195EXP
+020      0000010008CRE  RFOHO DDR ERREYR FACTURE           50401966200049112 RUE REAUMUR                 PARIS                     75002       FR France                        BNP PARIBAS                   FR7630004024140001056360968       1BNPAFRPPXXX
+030                                                                                                                                                               
+040           25 AVENUE MARNIX                   BRUXELLES                     1000        BE Belgium                       123322
+050               192500468      I2019-10-2800000000007428
+060192500344      C2019-10-2800000000013320
+999FRPRGF_VRTCHQ__000000005000000005000000

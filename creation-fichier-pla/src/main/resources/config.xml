@@ -1,0 +1,378 @@
+<beanio xmlns="http://www.beanio.org/2012/03"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.beanio.org/2012/03 http://www.beanio.org/2012/03/mapping.xsd">
+
+	<stream name="banniereEntrant" format="csv">
+		<parser>
+			<property name="delimiter" value="," />
+			<property name="lineSeparator" value="\n" />
+			<property name="whitespaceAllowed" value="true" />
+		</parser>
+
+		<!-- Detail records are bound to fr.scnf.model.Banniere -->
+		<record name="banniereEntrant" class="fr.scnf.model.Banniere">
+			<field name="entite" type="string" minOccurs="0" />
+			<field name="refEnregistrementBanniere" type="string"
+				minOccurs="0" />
+			<field name="identifiant" type="string" minOccurs="0" />
+			<field name="dateFichier" type="string" minOccurs="0" />
+			<field name="numeroFichier" type="string" minOccurs="0" />
+			<field name="nombreEnregistrements" type="string" minOccurs="0" />
+			<field name="numeroversion" type="string" minOccurs="0" />
+		</record>
+	</stream>
+
+	<stream name="articleFinEntrant" format="csv">
+		<parser>
+			<property name="delimiter" value="," />
+			<property name="lineSeparator" value="\n" />
+			<property name="whitespaceAllowed" value="true" />
+		</parser>
+		<!-- Detail records are bound to fr.scnf.model.ArticleFin -->
+		<record name="articleFinEntrant"
+			class="fr.scnf.model.ArticleFin">
+			<field name="refEnregistrementArticleFin" type="string"
+				minOccurs="0" />
+			<field name="identifiant" type="string" minOccurs="0" />
+			<field name="nombreTotalReglement" type="string" minOccurs="0" />
+			<field name="montantTotalReglement" type="string" minOccurs="0" />
+		</record>
+	</stream>
+	
+	<stream name="donneEntrant" format="csv">
+		<parser>
+			<property name="delimiter" value="," />
+			<property name="lineSeparator" value="\n" />
+			<property name="whitespaceAllowed" value="true" />
+		</parser>
+
+		<!-- Detail records are bound to fr.scnf.model.DonneEntrant -->
+		<record name="donneEntrant" class="fr.scnf.model.DonneEntrant">
+			<field name="identifiant" type="string" minOccurs="0" />
+			<field name="refEnregistrementReglement" type="string"
+				minOccurs="0" />
+			<field name="refReglement" type="string" minOccurs="0" />
+			<field name="modePaiement" type="string" minOccurs="0" />
+			<field name="typeReglement" type="string" minOccurs="0" />
+			<field name="libelleOperation" type="string" minOccurs="0" />
+			<field name="montantDuReglementEnEuro" type="string"
+				minOccurs="0" />
+			<field name="codeDevise" type="string" minOccurs="0" />
+			<field name="montantDuReglementEnDevise" type="string"
+				minOccurs="0" />
+			<field name="nombreDecimales" type="string" minOccurs="0" />
+			<field name="indicateurMontant" type="string" minOccurs="0" />
+			<field name="dateEcheance" type="string" minOccurs="0" />
+			<field name="codeRegroupement" type="string" minOccurs="0" />
+			<field name="referenceEmission" type="string" minOccurs="0" />
+			<field name="zoneReserveeReglement" type="string" minOccurs="0" />
+			<field name="lettrage" type="string" minOccurs="0" />
+			<field name="motifPaiement" type="string" minOccurs="0" />
+			<field name="codeEconomique" type="string" minOccurs="0" />
+
+			<field name="refEnregistrementBeneficiaire" type="string"
+				minOccurs="0" />
+			<field name="numeroBeneficiaire" type="string" minOccurs="0" />
+			<field name="siretBeneficiare" type="string" minOccurs="0" />
+			<field name="titreCivile" type="string" minOccurs="0" />
+			<field name="nomBeneficiaire" type="string" minOccurs="0" />
+			<field name="nomComplementaire" type="string" minOccurs="0" />
+			<field name="zoneReserveeBeneficiaire" type="string"
+				minOccurs="0" />
+			<field name="nomOrdreCheque" type="string" minOccurs="0" />
+			<field name="nomComplementaireOrdreCheque" type="string"
+				minOccurs="0" />
+			<field name="adresseBeneficiaire" type="string" minOccurs="0" />
+			<field name="adresseComplementaireBeneficiaire" type="string"
+				minOccurs="0" />
+			<field name="bureauDistributeurBenef" type="string"
+				minOccurs="0" />
+			<field name="codePostalBenef" type="string" minOccurs="0" />
+			<field name="codePaysBenef" type="string" minOccurs="0" />
+			<field name="libellePaysBenef" type="string" minOccurs="0" />
+			<field name="libelleBanqueBenef" type="string" minOccurs="0" />
+			<field name="identifiantNumeroCompte" type="string"
+				minOccurs="0" />
+			<field name="qualifiantStructureCompte" type="string"
+				minOccurs="0" />
+			<field name="codeBic" type="string" minOccurs="0" />
+
+			<field name="refEnregistrementDonneurOrdreInitial"
+				type="string" minOccurs="0" />
+			<field name="nomDonneurOrdre" type="string" minOccurs="0" />
+			<field name="referenceDuService" type="string" minOccurs="0" />
+			<field name="nomService" type="string" minOccurs="0" />
+			<field name="adresseService" type="string" minOccurs="0" />
+			<field name="bureauDistributeurService" type="string"
+				minOccurs="0" />
+			<field name="codePostalService" type="string" minOccurs="0" />
+			<field name="codeEtablissementComptable" type="string"
+				minOccurs="0" />
+			<field name="codeEtablissement" type="string" minOccurs="0" />
+			<field name="libelleEtablissement" type="string" minOccurs="0" />
+			<field name="nomResponsable" type="string" minOccurs="0" />
+			<field name="numeroTelephoneResponsable" type="string"
+				minOccurs="0" />
+			<field name="emailResponsable" type="string" minOccurs="0" />
+
+			<field name="refEnregistrementBeneficiaireFinal" type="string"
+				minOccurs="0" />
+			<field name="numeroBeneficiaireFinal" type="string"
+				minOccurs="0" />
+			<field name="nomBeneficiaireFinal" type="string" minOccurs="0" />
+			<field name="adresseBeneficiaireFinal" type="string"
+				minOccurs="0" />
+			<field name="bureauDistributeurBenefFinal" type="string"
+				minOccurs="0" />
+			<field name="codePostalBeneficiaireFinal" type="string"
+				minOccurs="0" />
+			<field name="codePaysBeneficiaireFinal" type="string"
+				minOccurs="0" />
+			<field name="libellePaysBeneficiaireFinal" type="string"
+				minOccurs="0" />
+
+			<field name="refEnregistrementInfoComplementaireReg"
+				type="string" minOccurs="0" />
+			<field name="adresseBanqueEtrangere" type="string"
+				minOccurs="0" />
+			<field name="bureauDistributeurBanqEtrangere" type="string"
+				minOccurs="0" />
+			<field name="codePostalBanqEtrangere" type="string"
+				minOccurs="0" />
+			<field name="codePaysBanqEtrangere" type="string" minOccurs="0" />
+			<field name="libellePaysBanqEtrangere" type="string"
+				minOccurs="0" />
+			<field name="zoneReserveeInfoComplementaireReg" type="string"
+				minOccurs="0" />
+
+			<field name="refEnregistrementFacture" type="string"
+				minOccurs="0" />
+			<field name="numeroCommande" type="string" minOccurs="0" />
+			<field name="numeroFactureFournisseur" type="string"
+				minOccurs="0" />
+			<field name="typeFacture" type="string" minOccurs="0" />
+			<field name="dateFacture" type="string" minOccurs="0" />
+			<field name="montantFactureEuro" type="string" minOccurs="0" />
+
+			<field name="refEnregistrementDeduction" type="string"
+				minOccurs="0" />
+			<field name="numeroDeduction" type="string" minOccurs="0" />
+			<field name="typeDeduction" type="string" minOccurs="0" />
+			<field name="dateDeduction" type="string" minOccurs="0" />
+			<field name="montantDeductionEuro" type="string" minOccurs="0" />
+
+			<field name="refEnregistrementCreanceDebiteur" type="string"
+				minOccurs="0" />
+			<field name="refCreance" type="string" minOccurs="0" />
+			<field name="refCreancier" type="string" minOccurs="0" />
+			<field name="libelleCreance" type="string" minOccurs="0" />
+			<field name="libelleDetailCreance" type="string" minOccurs="0" />
+			<field name="montantDetailCreance" type="string" minOccurs="0" />
+			<field name="numeroDebiteur" type="string" minOccurs="0" />
+			<field name="nomDebiteur" type="string" minOccurs="0" />
+
+			<field name="refEnregistrementActivite" type="string"
+				minOccurs="0" />
+			<field name="codeBuGl" type="string" minOccurs="0" />
+			<field name="codeDivision" type="string" minOccurs="0" />
+			<field name="typeCompteOperation" type="string" minOccurs="0" />
+			<field name="champ1" type="string" minOccurs="0" />
+			<field name="champ2" type="string" minOccurs="0" />
+
+			<field name="refEnregistrementDivers" type="string"
+				minOccurs="0" />
+			<field name="champ1" type="string" minOccurs="0" />
+			<field name="champ2" type="string" minOccurs="0" />
+			<field name="champ3" type="string" minOccurs="0" />
+			<field name="champ4" type="string" minOccurs="0" />
+			<field name="champ5" type="string" minOccurs="0" />
+			<field name="champ6" type="string" minOccurs="0" />
+			<field name="champ7" type="string" minOccurs="0" />
+			<field name="champ8" type="string" minOccurs="0" />
+			<field name="champ9" type="string" minOccurs="0" />
+			<field name="champ10" type="string" minOccurs="0" />
+		</record>
+	</stream>
+
+
+	<stream name="BanniereSendFile" format="fixedlength">
+		<record name="BanniereBean" class="fr.scnf.model.Banniere">
+			<field name="refEnregistrementBanniere" length="3"
+				type="string" />
+			<field name="identifiant" length="15" type="string" />
+			<field name="dateFichier" length="8" type="string" />
+			<field name="numeroFichier" length="6" type="string" />
+			<field name="nombreEnregistrements" length="7" type="string" />
+			<field name="numeroversion" length="2" type="string" />
+		</record>
+		<record name="reglements" class="fr.scnf.model.Reglement">
+			<field name="refEnregistrementReglement" length="3"
+				type="string" />
+			<field name="refReglement" length="10" type="string" />
+			<field name="modePaiement" length="3" type="string" />
+			<field name="typeReglement" length="3" type="string" />
+			<field name="libelleOperation" length="31" type="string" />
+			<field name="montantDuReglementEnEuro" length="14"
+				type="string" />
+			<field name="codeDevise" length="3" type="string" />
+			<field name="montantDuReglementEnDevise" length="15"
+				type="string" />
+			<field name="nombreDecimales" length="1" type="string" />
+			<field name="indicateurMontant" length="1" type="string" />
+			<field name="dateEcheance" length="10" type="string" />
+			<field name="codeRegroupement" length="10" type="string" />
+			<field name="referenceEmission" length="10" type="string" />
+			<field name="zoneReserveeReglement" length="3" type="string" />
+			<field name="lettrage" length="30" type="string" />
+			<field name="motifPaiement" length="140" type="string" />
+			<field name="codeEconomique" length="6" type="string" />
+		</record>
+		<record name="beneficiaire" class="fr.scnf.model.Beneficiaire">
+			<field name="refEnregistrementBeneficiaire" length="3"
+				type="string" />
+			<field name="numeroBeneficiaire" length="10" type="string" />
+			<field name="siretBeneficiare" length="14" type="string" />
+			<field name="titreCivile" length="1" type="string" />
+			<field name="nomBeneficiaire" length="40" type="string" />
+			<field name="nomComplementaire" length="30" type="string" />
+			<field name="zoneReserveeBeneficiaire" length="10"
+				type="string" />
+			<field name="nomOrdreCheque" length="32" type="string" />
+			<field name="nomComplementaireOrdreCheque" length="32"
+				type="string" />
+			<field name="adresseBeneficiaire" length="32" type="string" />
+			<field name="adresseComplementaireBeneficiaire" length="32"
+				type="string" />
+			<field name="bureauDistributeurBenef" length="26" type="string" />
+			<field name="codePostalBenef" length="12" type="string" />
+			<field name="codePaysBenef" length="3" type="string" />
+			<field name="libellePaysBenef" length="30" type="string" />
+			<field name="libelleBanqueBenef" length="30" type="string" />
+			<field name="identifiantNumeroCompte" length="34" type="string" />
+			<field name="qualifiantStructureCompte" length="1"
+				type="string" />
+			<field name="codeBic" length="11" type="string" />
+		</record>
+		<!-- Donneur d'ordre initial -->
+		<record name="donneurOrdreInitial"
+			class="fr.scnf.model.DonneurOrdreInitial">
+			<field name="refEnregistrementDonneurOrdreInitial" length="3"
+				type="string" />
+			<field name="nomDonneurOrdre" length="40" type="string" />
+			<field name="referenceDuService" length="10" type="string" />
+			<field name="nomService" length="50" type="string" />
+			<field name="adresseService" length="32" type="string" />
+			<field name="bureauDistributeurService" length="26"
+				type="string" />
+			<field name="codePostalService" length="12" type="string" />
+			<field name="codeEtablissementComptable" length="10"
+				type="string" />
+			<field name="codeEtablissement" length="10" type="string" />
+			<field name="libelleEtablissement" length="50" type="string" />
+			<field name="nomResponsable" length="50" type="string" />
+			<field name="numeroTelephoneResponsable" length="14"
+				type="string" />
+			<field name="emailResponsable" length="60" type="string" />
+		</record>
+		<!-- beneficiaireFinal -->
+		<record name="beneficiaireFinal"
+			class="fr.scnf.model.BeneficiaireFinal">
+			<field name="refEnregistrementBeneficiaireFinal" length="3"
+				type="string" />
+			<field name="numeroBeneficiaireFinal" length="10" type="string" />
+			<field name="nomBeneficiaireFinal" length="40" type="string" />
+			<field name="adresseBeneficiaireFinal" length="32"
+				type="string" />
+			<field name="bureauDistributeurBenefFinal" length="26"
+				type="string" />
+			<field name="codePostalBeneficiaireFinal" length="12"
+				type="string" />
+			<field name="codePaysBeneficiaireFinal" length="3"
+				type="string" />
+			<field name="libellePaysBeneficiaireFinal" length="30"
+				type="string" />
+		</record>
+		<!-- infoComplementaireReg -->
+		<record name="infoComplementaireReg"
+			class="fr.scnf.model.InfoComplementaireReg">
+			<field name="refEnregistrementInfoComplementaireReg" length="3"
+				type="string" />
+			<field name="adresseBanqueEtrangere" length="35" type="string" />
+			<field name="bureauDistributeurBanqEtrangere" length="30"
+				type="string" />
+			<field name="codePostalBanqEtrangere" length="12" type="string" />
+			<field name="codePaysBanqEtrangere" length="3" type="string" />
+			<field name="libellePaysBanqEtrangere" length="30"
+				type="string" />
+			<field name="zoneReserveeInfoComplementaireReg" length="3"
+				type="string" />
+		</record>
+		<!-- Facture -->
+		<record name="factures" minOccurs="0" maxOccurs="unbounded"
+			class="fr.scnf.model.Facture">
+			<field name="refEnregistrementFacture" length="3" type="string" />
+			<field name="numeroCommande" length="15" type="string" />
+			<field name="numeroFactureFournisseur" length="15"
+				type="string" />
+			<field name="typeFacture" length="1" type="string" />
+			<field name="dateFacture" length="10" type="string" />
+			<field name="montantFactureEuro" length="14" type="string" />
+		</record>
+		<!-- Deduction -->
+		<record name="deductions" class="fr.scnf.model.Deduction">
+			<field name="refEnregistrementDeduction" length="3"
+				type="string" />
+			<field name="numeroDeduction" length="15" type="string" />
+			<field name="typeDeduction" length="1" type="string"
+				justify="right" padding="0" />
+			<field name="dateDeduction" length="10" type="string" />
+			<field name="montantDeductionEuro" length="14" type="string" />
+		</record>
+		<!-- Creance -->
+		<record name="creanceDebiteurs"
+			class="fr.scnf.model.CreanceDebiteur">
+			<field name="refEnregistrementCreanceDebiteur" length="3"
+				type="string" />
+			<field name="refCreance" length="30" type="string" />
+			<field name="refCreancier" length="35" type="string" />
+			<field name="libelleCreance" length="60" type="string" />
+			<field name="libelleDetailCreance" length="60" type="string" />
+			<field name="montantDetailCreance" length="14" type="string" />
+			<field name="numeroDebiteur" length="10" type="string" />
+			<field name="nomDebiteur" length="40" type="string" />
+		</record>
+		<!-- Activite -->
+		<record name="activite" class="fr.scnf.model.Activite">
+			<field name="refEnregistrementActivite" length="3"
+				type="string" />
+			<field name="codeBuGl" length="5" type="string" />
+			<field name="codeDivision" length="5" type="string" />
+			<!-- <field name="codeDivision" length="10" type="string" /> -->
+			<field name="typeCompteOperation" length="3" type="string" />
+			<field name="champ1Activite" length="10" type="string" />
+			<field name="champ2Activite" length="10" type="string" />
+		</record>
+		<!-- Divers -->
+		<record name="divers" class="fr.scnf.model.Divers">
+			<field name="refEnregistrementDivers" length="3" type="string" />
+			<field name="champ1" length="30" type="string" />
+			<field name="champ2" length="30" type="string" />
+			<field name="champ3" length="30" type="string" />
+			<field name="champ4" length="30" type="string" />
+			<field name="champ5" length="30" type="string" />
+			<field name="champ6" length="30" type="string" />
+			<field name="champ7" length="30" type="string" />
+			<field name="champ8" length="30" type="string" />
+			<field name="champ9" length="30" type="string" />
+			<field name="champ10" length="30" type="string" />
+		</record>
+		<!-- ArticleFin -->
+		<record name="articleFin" class="fr.scnf.model.ArticleFin">
+			<field name="refEnregistrementArticleFin" length="3"
+				type="string" />
+			<field name="identifiant" length="15" type="string" />
+			<field name="nombreTotalReglement" length="10" type="string" />
+			<field name="montantTotalReglement" length="14" type="string" />
+		</record>
+	</stream>
+</beanio>

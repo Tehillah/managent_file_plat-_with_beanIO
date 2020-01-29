@@ -1,0 +1,112 @@
+<beanio xmlns="http://www.beanio.org/2012/03"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.beanio.org/2012/03 http://www.beanio.org/2012/03/mapping.xsd">
+
+	<stream name="banniereBAP" format="csv">
+		<parser>
+			<property name="delimiter" value="," />
+			<property name="lineSeparator" value="\n" />
+			<property name="whitespaceAllowed" value="true" />
+		</parser>
+	
+		<!-- Detail records are bound to fr.sncf.model.BanniereBAP -->
+		
+		<record name="banniereBAP" class="fr.scnf.model.BanniereBAP">
+			<field name="entite" type="string" minOccurs="0" />
+			<field name="refEnregistrementBanniere" type="string" minOccurs="0" />
+			<field name="identifiant" type="string" minOccurs="0" />
+			<field name="dateFichier" type="string" minOccurs="0" />
+			<field name="numeroFichier" type="string" minOccurs="0" />
+			<field name="nombreEnregistrements" type="string" minOccurs="0" />
+		</record>
+	</stream>
+	
+	<stream name="articleDetail" format="csv">
+		<parser>
+			<property name="delimiter" value="," />
+			<property name="lineSeparator" value="\n" />
+			<property name="whitespaceAllowed" value="true" />
+		</parser>
+	
+		<!-- Detail records are bound to fr.sncf.model.ArticleDetail -->
+		
+		<record name="articleDetail" class="fr.scnf.model.ArticleDetail">
+			<field name="identifiant" type="string" minOccurs="0" />
+			<field name="refEnregistrementReglement" type="string" minOccurs="0" />
+			<field name="identifiantFluxReglement" type="string" minOccurs="0" />
+			<field name="numeroFichier" type="string" minOccurs="0" />
+			<field name="nombreTotalReglements" type="string" minOccurs="0" />
+			<field name="montantTotalReglements" type="string" minOccurs="0" />
+			
+			<field name="refEnregistrementModePaiement" type="string" minOccurs="0" />
+			<field name="modePaiement" type="string" minOccurs="0" />
+			<field name="typeReglement" type="string" minOccurs="0" />
+			<field name="libelleModePaiementParTypeReglement" type="string" minOccurs="0" />
+			<field name="nombreTotalReglements" type="string" minOccurs="0" />
+			<field name="montantTotalReglements" type="string" minOccurs="0" />
+		</record>
+	</stream>
+	
+	<stream name="articleFinBAP" format="csv">
+		<parser>
+			<property name="delimiter" value="," />
+			<property name="lineSeparator" value="\n" />
+			<property name="whitespaceAllowed" value="true" />
+		</parser>
+	
+		<!-- Detail records are bound to fr.sncf.model.ArticleFinBAP -->
+		
+		<record name="articleFinBAP" class="fr.scnf.model.ArticleFinBAP">
+			<field name="refEnregistrementArticleFin" type="string" minOccurs="0" />
+			<field name="identifiant" type="string" minOccurs="0" />
+			<field name="nombreTotalReglements" type="string" minOccurs="0" />
+			<field name="montantTotalReglements" type="string" minOccurs="0" />
+		</record>
+	</stream>
+
+	
+	
+	<stream name="BanniereSendFile" format="fixedlength">
+	
+		<!-- Detail records are bound to fr.sncf.model.BanniereBAP -->
+	
+		<record name="BanniereBean" class="fr.scnf.model.BanniereBAP">
+			<field name="refEnregistrementBanniere" length="3" type="string" />
+			<field name="identifiant" length="15" type="string" />
+			<field name="dateFichier" length="8" type="string" />
+			<field name="numeroFichier" length="6" type="string" />
+			<field name="nombreEnregistrements" length="7" type="string" />
+		</record>
+		
+		<!-- Detail records are bound to fr.sncf.model.FluxDeReglement -->
+		
+		<record name="reglements" class="fr.scnf.model.FluxDeReglement" >
+			<field name="refEnregistrementReglement" length="3" type="string" />
+			<field name="identifiantFluxReglement" length="15" type="string" />
+			<field name="numeroFichier" length="6" type="string" />
+			<field name="nombreTotalReglements" length="10" type="string" />
+			<field name="montantTotalReglements" length="14" type="string" />			
+		</record>
+		
+		<!-- Detail records are bound to fr.sncf.model.ModePaiement -->
+		
+		<record name="modePaiement" class="fr.scnf.model.ModePaiement" >
+			<field name="refEnregistrementModePaiement" length="3" type="string" />
+			<field name="modePaiement" length="3" type="string" />
+			<field name="typeReglement" length="3" type="string" />
+			<field name="libelleModePaiementParTypeReglement" length="30" type="string" />
+			<field name="nombreTotalReglements" length="10" type="string" />
+			<field name="montantTotalReglements" length="14" type="string" />			
+		</record>
+		
+		<!-- Detail records are bound to fr.sncf.model.ArticleFinBAP -->
+		
+		<record name="articleFinBAP" class="fr.scnf.model.ArticleFinBAP" >
+			<field name="refEnregistrementArticleFin" length="3" type="string" />
+			<field name="identifiant" length="15" type="string" />
+			<field name="nombreTotalReglements" length="10" type="string" />
+			<field name="montantTotalReglements" length="14" type="string" />			
+		</record>
+		
+	</stream>
+</beanio>
